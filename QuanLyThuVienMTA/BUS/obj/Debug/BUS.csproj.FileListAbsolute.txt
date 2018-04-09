@@ -1,0 +1,9 @@
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\BUS\bin\Debug\BUS.dll
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\BUS\bin\Debug\BUS.pdb
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\BUS\bin\Debug\DAL.dll
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\BUS\bin\Debug\Entity.dll
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\BUS\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\BUS\bin\Debug\Entity.pdb
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\BUS\obj\Debug\BUS.dll
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\BUS\obj\Debug\BUS.pdb

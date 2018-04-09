@@ -1,0 +1,15 @@
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\QuanLyThuVienMTA.exe.config
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\QuanLyThuVienMTA.exe
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\QuanLyThuVienMTA.pdb
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\BUS.dll
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\Entity.dll
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\DAL.dll
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\BUS.pdb
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\Entity.pdb
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmSach.resources
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.csproj.GenerateResource.Cache
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.exe
+C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.pdb
