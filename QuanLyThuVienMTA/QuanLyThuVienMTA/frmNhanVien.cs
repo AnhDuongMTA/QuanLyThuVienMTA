@@ -194,7 +194,7 @@ namespace QuanLyThuVienMTA
                 return;
             }
             dgvNhanVien.Refresh();
-           // dgvNhanVien.DataSource = DAL.NhanVienDAL.TimKiem(cbTimKiem.SelectedIndex, txtTimKiem.Text.Trim());
+            //dgvNhanVien.DataSource = DAL.NhanVienDAL.TimKiem(cbTimKiem.SelectedIndex, txtTimKiem.Text.Trim());
         }
 
         private void frmNhanVien_Load(object sender, EventArgs e)
