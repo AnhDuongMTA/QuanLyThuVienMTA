@@ -3,3 +3,8 @@ C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\Entity\bin\Debug
 C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
 C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\Entity\obj\Debug\Entity.dll
 C:\Users\ADMIN\Desktop\QUANLLYTHUVIENMTA(MAIN)\QuanLyThuVienMTA\Entity\obj\Debug\Entity.pdb
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\bin\Debug\Entity.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\bin\Debug\Entity.pdb
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.pdb
