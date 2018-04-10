@@ -124,7 +124,7 @@ namespace QuanLyThuVienMTA
             else gt = "Nữ";
 
             obj.GioiTinh = gt;
-            if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtDienThoai.Text!="" && radNam.Checked==false && radNu.Checked==false && fluu == 0)
+            if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtDienThoai.Text != "" && radNam.Checked == false || radNu.Checked == false && fluu == 0)
             {
                 try
                 {
@@ -142,7 +142,7 @@ namespace QuanLyThuVienMTA
 
                 }
             }
-            else if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtDienThoai.Text != "" && radNam.Checked == false && radNu.Checked == false && fluu != 0)
+            else if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtDienThoai.Text != "" && radNam.Checked == false || radNu.Checked == false && fluu != 0)
             {
                 try
                 {
