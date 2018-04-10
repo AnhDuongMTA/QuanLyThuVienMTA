@@ -31,3 +31,22 @@ E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmViTri.resources
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmTTViTri.resources
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmDSSach.resources
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\QuanLyThuVienMTA.exe.config
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.exe
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.pdb
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.csprojResolveAssemblyReference.cache
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmDSSach.resources
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmNhanVien.resources
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmSach.resources
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmTTViTri.resources
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmViTri.resources
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.Properties.Resources.resources
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.csproj.GenerateResource.Cache
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\QuanLyThuVienMTA.exe
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\QuanLyThuVienMTA.pdb
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\BUS.dll
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\Entity.dll
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\DAL.dll
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\BUS.pdb
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\Entity.pdb
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\DAL.pdb

@@ -16,3 +16,12 @@ E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.dll
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.pdb
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.dll
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.pdb
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\BUS.dll
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\BUS.pdb
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\DAL.dll
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\Entity.dll
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\DAL.pdb
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\Entity.pdb

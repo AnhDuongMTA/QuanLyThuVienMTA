@@ -12,3 +12,10 @@ E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.dll
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.pdb
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.dll
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.pdb
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\DAL.dll
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\DAL.pdb
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\Entity.dll
+C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\Entity.pdb
