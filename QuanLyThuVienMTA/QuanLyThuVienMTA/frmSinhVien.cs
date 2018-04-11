@@ -56,14 +56,14 @@ namespace QuanLyThuVienMTA
             fluu = 0;
            // txtMaSV.Text = bus.TangMa();
             DisEnl(true);
-            txtMaSV.Enabled = false;
+            txtMaSV.Enabled = true;
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
             fluu = 1;
             DisEnl(true);
-            txtMaSV.Enabled = false;
+            txtMaSV.Enabled = true;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
