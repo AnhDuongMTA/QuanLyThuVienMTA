@@ -24,7 +24,7 @@ namespace QuanLyThuVienMTA
         public void DisEnl(bool e)
         {
             btnThem.Enabled = !e;
-            btnSua.Enabled =!e;
+            btnSua.Enabled = !e;
             btnXoa.Enabled = !e;
             btnLuu.Enabled = e;
             btnHuy.Enabled = e;
@@ -56,14 +56,14 @@ namespace QuanLyThuVienMTA
             fluu = 0;
            // txtMaSV.Text = bus.TangMa();
             DisEnl(true);
-            //txtMaSV.Enabled = false;
+            txtMaSV.Enabled = false;
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
             fluu = 1;
             DisEnl(true);
-           // txtMaSV.Enabled = false;
+            txtMaSV.Enabled = false;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -159,7 +159,7 @@ namespace QuanLyThuVienMTA
         private void frmSinhVien_Load(object sender, EventArgs e)
         {
             HienThi();
-            DisEnl(true);
+            DisEnl(false);
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -223,7 +223,7 @@ namespace QuanLyThuVienMTA
             if (fluu == 0)
             {
                 txtTenSV.Text = Convert.ToString(dgvSV.CurrentRow.Cells["TenSV"].Value);
-                txtSDT.Text = Convert.ToString(dgvSV.CurrentRow.Cells["SoDT"].Value);
+                txtSDT.Text = Convert.ToString(dgvSV.CurrentRow.Cells["SDT"].Value);
                 dtpNgaySinh.Text = Convert.ToString(dgvSV.CurrentRow.Cells["NgaySinh"].Value);
                 txtLop.Text = Convert.ToString(dgvSV.CurrentRow.Cells["Lop"].Value);
                 if (dgvSV.Rows[e.RowIndex].Cells["GioiTinh"].Value.ToString() == "Nam") rbNam.Checked = true;
