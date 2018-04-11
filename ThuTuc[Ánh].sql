@@ -1,7 +1,7 @@
 ﻿-- Ánh--
 -- Thủ tục--
 GO
-CREATE PROC NV_SelectAll
+ALTER PROC NV_SelectAll
 AS
 BEGIN
 	SELECT * FROM dbo.NhanVien
@@ -9,7 +9,7 @@ END
 
 -- Thêm NV
 GO
-CREATE PROC ThemNV(@MaNV VARCHAR(50), @TenNV NVARCHAR(50), @GioiTinh NVARCHAR(10), @NgaySinh DATE, @DienThoai NVARCHAR(15))
+ALTER PROC ThemNV(@MaNV VARCHAR(50), @TenNV NVARCHAR(50), @GioiTinh NVARCHAR(10), @NgaySinh DATE, @DienThoai NVARCHAR(15))
 AS
 BEGIN
 	INSERT INTO dbo.NhanVien

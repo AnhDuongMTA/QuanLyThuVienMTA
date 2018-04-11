@@ -124,7 +124,7 @@ namespace QuanLyThuVienMTA
             else gt = "Nữ";
 
             obj.GioiTinh = gt;
-            if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtDienThoai.Text != "" && radNam.Checked == false || radNu.Checked == false && fluu == 0)
+            if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtDienThoai.Text != "" && fluu == 0)
             {
                 try
                 {
@@ -142,7 +142,7 @@ namespace QuanLyThuVienMTA
 
                 }
             }
-            else if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtDienThoai.Text != "" && radNam.Checked == false || radNu.Checked == false && fluu != 0)
+            else if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtDienThoai.Text != "" && fluu != 0)
             {
                 try
                 {
@@ -183,18 +183,25 @@ namespace QuanLyThuVienMTA
         {          
             HienThi();
         }
-
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            txtTimKiem.Enabled = true;
-            cbTimKiem.Enabled = true;
-            if (txtTimKiem.Text.Trim() == "" || txtTimKiem.Text.Trim().Length > 50)
+            if (cbTimKiem.Text == "Theo Mã")
             {
-                MessageBox.Show("Lỗi Từ khóa", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                dgvNhanVien.DataSource = Bus.TimKiemNV("select * from NhanVien where MaNV like '%" + txtTimKiem.Text + "%'");
             }
-            dgvNhanVien.Refresh();
-            //dgvNhanVien.DataSource = DAL.NhanVienDAL.TimKiem(cbTimKiem.SelectedIndex, txtTimKiem.Text.Trim());
+            if (cbTimKiem.Text == "Theo Tên")
+            {
+                dgvNhanVien.DataSource = Bus.TimKiemNV("select * from NhanVien where TenNV like '%" + txtTimKiem.Text + "%'");
+            }
+            if (cbTimKiem.Text == "Theo Ngày Sinh")
+            {
+                dgvNhanVien.DataSource = Bus.TimKiemNV("select * from NhanVien where NgaySinh like '%" + txtTimKiem.Text + "%'");
+            }
+            if (cbTimKiem.Text == "Theo SĐT")
+            {
+                dgvNhanVien.DataSource = Bus.TimKiemNV("select * from NhanVien where DienThoai like '%" + txtTimKiem.Text + "%'");
+            }
+            
         }
 
         private void frmNhanVien_Load(object sender, EventArgs e)

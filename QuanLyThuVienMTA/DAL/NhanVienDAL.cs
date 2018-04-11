@@ -52,30 +52,9 @@ namespace DAL
         {
             return conn.TangMa("Select * From NhanVien", "NV");
         }
-        public static List<NhanVienEntity> TimKiem(int type, string TuKhoa)
+        public DataTable TimKiemNV(string strTimKiem)
         {
-            string query = "";
-            KetNoi conn = new KetNoi();
-            switch (type)
-            {
-                case 0:
-                    query = string.Format("SELECT * FROM dbo.NhanVien WHERE MaNV LIKE '%{0}%'", TuKhoa);
-                    return Helper.ToListof<NhanVienEntity>(conn.GetData(query));
-                case 1:
-
-                    query = string.Format("SELECT * FROM dbo.NhanVien WHERE TenNV LIKE N'%{0}%'", TuKhoa);
-                    return Helper.ToListof<NhanVienEntity>(conn.GetData(query));
-                case 2:
-                    query = string.Format(" SELECT * FROM dbo.NhanVien NV WHERE GioiTinh LIKE N'%{0}%'", TuKhoa);
-                    return Helper.ToListof<NhanVienEntity>(conn.GetData(query));
-                case 3:
-                    query = string.Format("SELECT * FROM dbo.NhanVien WHERE NgaySinh LIKE '%{0}%'", TuKhoa);
-                    return Helper.ToListof<NhanVienEntity>(conn.GetData(query));
-                case 4:
-                    query = string.Format("SELECT * FROM dbo.NhanVien WHERE DienThoai LIKE '%{0}%'", TuKhoa);
-                    return Helper.ToListof<NhanVienEntity>(conn.GetData(query));
-            }
-            return Helper.ToListof<NhanVienEntity>(conn.GetData(" SELECT * from NhanVien "));
+            return conn.GetData(strTimKiem);
         }
     }
 }
