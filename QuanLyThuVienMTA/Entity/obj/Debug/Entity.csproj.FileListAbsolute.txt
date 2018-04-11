@@ -13,3 +13,8 @@ C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\bin\D
 C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
 C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.dll
 C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.pdb
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.dll
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.pdb
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\bin\Debug\Entity.dll
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\bin\Debug\Entity.pdb

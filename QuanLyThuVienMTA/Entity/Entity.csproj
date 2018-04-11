@@ -43,6 +43,7 @@
     <Compile Include="NhanVienEntity.cs" />
     <Compile Include="Sach.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinhVienEntity.cs" />
     <Compile Include="ViTriSachEntity.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -19,3 +19,10 @@ C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debu
 C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\DAL.pdb
 C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\Entity.dll
 C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\Entity.pdb
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.dll
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.pdb
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\DAL.dll
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\DAL.pdb
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\Entity.dll
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\Entity.pdb

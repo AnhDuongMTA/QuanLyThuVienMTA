@@ -25,3 +25,12 @@ C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debu
 C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\Entity.dll
 C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\DAL.pdb
 C:\Users\NgocAnh\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\Entity.pdb
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.dll
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.pdb
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\BUS.dll
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\BUS.pdb
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\DAL.dll
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\Entity.dll
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\DAL.pdb
+D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\Entity.pdb
