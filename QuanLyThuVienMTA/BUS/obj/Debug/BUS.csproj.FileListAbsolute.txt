@@ -34,14 +34,3 @@ D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\DAL.dll
 D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\Entity.dll
 D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\DAL.pdb
 D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\Entity.pdb
-H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\BUS.dll
-H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\BUS.pdb
-H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\DAL.dll
-H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\Entity.dll
-H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\DAL.pdb
-H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\bin\Debug\Entity.pdb
-H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
-H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.csproj.CopyComplete
-H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.dll
-H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\BUS\obj\Debug\BUS.pdb
