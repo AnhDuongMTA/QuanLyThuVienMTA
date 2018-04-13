@@ -1,6 +1,6 @@
 USE QuanLyThuVienMTA
-GO
 
+GO
 CREATE TABLE NguoiDung
 (
 	TaiKhoan VARCHAR(50),
@@ -15,13 +15,14 @@ VALUES  ( 'admin', -- TaiKhoan - varchar(50)
           'admin', -- MatKhau - varchar(50)
           1  -- PhanQuyen - int
           )
+go
 INSERT dbo.NguoiDung
         ( TaiKhoan, MatKhau, PhanQuyen )
 VALUES  ( N'user1', -- TaiKhoan - nvarchar(30)
           N'123',  -- MatKhau - nvarchar(30)
 		   0  -- PhanQuyen - int
           )
-
+go
 CREATE PROC DangNhap(@TaiKhoan NCHAR(50),@MatKhau NCHAR(50))
 AS
 BEGIN

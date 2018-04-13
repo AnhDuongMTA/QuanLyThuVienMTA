@@ -16,6 +16,7 @@ namespace QuanLyThuVienMTA
         ChiTietPhieuMuon ctpm = new ChiTietPhieuMuon();
         ChiTietPhieuMuonBUS ctpmBUS = new ChiTietPhieuMuonBUS();
         SachBUS SachBUS = new SachBUS();
+        NhanVienBUS nvBUS = new NhanVienBUS();
 
         public frmChiTietPhieuMuon()
         {
@@ -25,17 +26,27 @@ namespace QuanLyThuVienMTA
         public void HienThiDSPM()
         {
             dgvMuon.DataSource =  ctpmBUS.GetData();
-            dgvDSMuonT.DataSource = ctpmBUS.GetData();
+            dgvDSMuon1.DataSource = ctpmBUS.GetData();
             ShowTenSach();
+            ShowMaNV();
         }
 
+        public void ShowMaNV()
+        {
+            DataTable dt = new DataTable();
+            dt = nvBUS.GetData();
+            cbMaNV0.DataSource = dt.Copy();
+            cbMaNV0.DisplayMember = "MaNV";
+            cbMaNV0.ValueMember = "MaNV";
+
+        }
         public void Clear()
         {
-            txtMaSachT.Text = "";
-            txtMaPMT.Text = "";
-            txtMaSVT.Text = "";
-            dtpNgayHenTraT.Text = "";
-            dtpNgayMuonT.Text = "";
+            txtMaSach1.Text = "";
+            txtMaPM1.Text = "";
+            txtMaSV1.Text = "";
+            dtpNgayHenTra1.Text = "";
+            dtpNgayMuon1.Text = "";
             //txtSoLuongTra.Text = "";
 
         }
@@ -44,9 +55,9 @@ namespace QuanLyThuVienMTA
         {
             DataTable dt = new DataTable();
             dt = SachBUS.GetData();
-            cbTenSach .DataSource = dt.Copy();
-            cbTenSach.DisplayMember = "TenSach";
-            cbTenSach.ValueMember = "TenSach";
+            cbTenSach0 .DataSource = dt.Copy();
+            cbTenSach0.DisplayMember = "TenSach";
+            cbTenSach0.ValueMember = "TenSach";
 
         }
         private void frmChiTietPhieuMua_Load(object sender, EventArgs e)
@@ -73,7 +84,7 @@ namespace QuanLyThuVienMTA
 
         private void cbTenSach_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataRowView d = (DataRowView)cbTenSach.SelectedItem;
+            DataRowView d = (DataRowView)cbTenSach0.SelectedItem;
 
             lbMaSach.Text = d.Row["MaSach"].ToString();
             lbNgonNgu.Text = d.Row["NgonNgu"].ToString();
@@ -90,57 +101,91 @@ namespace QuanLyThuVienMTA
 
         private void btnMuon_Click(object sender, EventArgs e)
         {
-            ctpm.MaNV = cbMaNV.Text;
-            ctpm.MaPM = txtMaPMM.Text;
-            ctpm.MaSach = lbMaSach.Text;
-            ctpm.MaSV = txtMaSVM.Text;
-            ctpm.NgayMuon = dtpNgayMuonM.Text;
-            ctpm.NgayTra = dtpNgayTraM.Text;
-            ctpm.TienPhat = 0;
-            // ctpm.SoLuong = Convert.ToInt32(txtSoLuong.Text);
+            if (cbMaNV0.Text==""|| txtMaPM0.Text=="")
+            {
+                MessageBox.Show("Hãy nhập đầy đủ thông tin!");
+            }
+            else {
+                ctpm.MaNV = cbMaNV0.Text;
+                ctpm.MaPM = txtMaPM0.Text;
+                ctpm.MaSach = lbMaSach.Text;
+                ctpm.MaSV = txtMaSV0.Text;
+                ctpm.NgayMuon = dtpNgayMuon0.Text;
+                ctpm.NgayTra = dtpNgayTra0.Text;
+                ctpm.TienPhat = 0;
 
-            ctpmBUS.ThemPhieuMuon(ctpm);
-            ctpmBUS.ThemCTPM(ctpm);
-            MessageBox.Show("Thêm thành công!");
-            HienThiDSPM();
+                // ctpm.SoLuong = Convert.ToInt32(txtSoLuong.Text);
+
+                ctpmBUS.ThemPhieuMuon(ctpm);
+                ctpmBUS.ThemCTPM(ctpm);
+                MessageBox.Show("Thêm thành công!");
+                HienThiDSPM();
+            }
         }
 
         private void btnTraSach_Click(object sender, EventArgs e)
         {
-            ctpmBUS.XoaCTPM(txtMaPMT.Text, txtMaSachT.Text);
-            MessageBox.Show("Trả thành công!");
-            Clear();
-            HienThiDSPM();
+            if (txtMaPM1.Text=="" || txtMaSach1.Text=="")
+            {
+                MessageBox.Show("Chưa nhập thông tin đầy đủ!");
+
+            }
+            else{
+                ctpmBUS.XoaCTPM(txtMaPM1.Text, txtMaSach1.Text);
+                ctpmBUS.XoaPhieuMuon(txtMaPM1.Text);
+                MessageBox.Show("Trả thành công!");
+                Clear();
+                HienThiDSPM();
+            }
         }
 
         private void dgvDSMuonT_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtMaPMT.Text = Convert.ToString(dgvDSMuonT.CurrentRow.Cells["MaPMT"].Value);
-            txtMaSachT.Text = Convert.ToString(dgvDSMuonT.CurrentRow.Cells["MaSachT"].Value);
-            txtMaSVT.Text = Convert.ToString(dgvDSMuonT.CurrentRow.Cells["MaSVT"].Value);
-            dtpNgayMuonT.Text = Convert.ToString(dgvDSMuonT.CurrentRow.Cells["NgayMuonT"].Value);
-            dtpNgayHenTraT.Text = Convert.ToString(dgvDSMuonT.CurrentRow.Cells["NgayTraT"].Value);
+            txtMaPM1.Text = Convert.ToString(dgvDSMuon1.CurrentRow.Cells["MaPMT"].Value);
+            txtMaSach1.Text = Convert.ToString(dgvDSMuon1.CurrentRow.Cells["MaSachT"].Value);
+            txtMaSV1.Text = Convert.ToString(dgvDSMuon1.CurrentRow.Cells["MaSVT"].Value);
+            dtpNgayMuon1.Text = Convert.ToString(dgvDSMuon1.CurrentRow.Cells["NgayMuonT"].Value);
+            dtpNgayHenTra1.Text = Convert.ToString(dgvDSMuon1.CurrentRow.Cells["NgayTraT"].Value);
         }
 
         private void btnTimKiemTra_Click(object sender, EventArgs e)
         {
-            dgvDSMuonT.DataSource = ctpmBUS.TimKiemPhieuMuon(txtMaSVTK.Text);
+            if(txtMaSVTK.Text=="")
+            {
+                MessageBox.Show("Chưa nhập Mã sinh viên cần tìm kiếm!");
+
+            }
+            else
+            dgvDSMuon1.DataSource = ctpmBUS.TimKiemPhieuMuon(txtMaSVTK.Text);
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            dgvDSMuonT.DataSource = ctpmBUS.GetData();
+            dgvDSMuon1.DataSource = ctpmBUS.GetData();
             Clear();
         }
 
         private void dgvDSMuonT_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
-          dgvDSMuonT.Rows[e.RowIndex].Cells["STTT"].Value = e.RowIndex + 1;
+          dgvDSMuon1.Rows[e.RowIndex].Cells["STTT"].Value = e.RowIndex + 1;
         }
 
         private void dgvMuon_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
             dgvMuon.Rows[e.RowIndex].Cells["STT"].Value = e.RowIndex + 1;
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Xác Nhận Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else
+            {
+                HienThiDSPM();
+            }
         }
     }
 }

@@ -35,3 +35,10 @@ H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\D
 H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.csproj.CopyComplete
 H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.dll
 H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.pdb
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\DAL.dll
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\DAL.pdb
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\Entity.dll
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\Entity.pdb
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.dll
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.pdb

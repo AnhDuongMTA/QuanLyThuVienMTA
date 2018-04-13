@@ -24,3 +24,8 @@ H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debu
 H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
 H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.dll
 H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.pdb
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\bin\Debug\Entity.dll
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\bin\Debug\Entity.pdb
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.dll
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.pdb

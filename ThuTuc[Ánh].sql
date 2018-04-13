@@ -1,7 +1,7 @@
 ﻿-- Ánh--
 -- Thủ tục--
 GO
-ALTER PROC NV_SelectAll
+CREATE PROC NV_SelectAll
 AS
 BEGIN
 	SELECT * FROM dbo.NhanVien
@@ -9,7 +9,7 @@ END
 
 -- Thêm NV
 GO
-ALTER PROC ThemNV(@MaNV VARCHAR(50), @TenNV NVARCHAR(50), @GioiTinh NVARCHAR(10), @NgaySinh DATE, @DienThoai NVARCHAR(15))
+CREATE PROC ThemNV(@MaNV VARCHAR(50), @TenNV NVARCHAR(50), @GioiTinh NVARCHAR(10), @NgaySinh DATE, @DienThoai NVARCHAR(15))
 AS
 BEGIN
 	INSERT INTO dbo.NhanVien
@@ -24,7 +24,7 @@ END
 
 -- Thủ tục sửa
 GO
-ALTER PROC SuaNV(@MaNV VARCHAR(50), @TenNV NVARCHAR(50), @GioiTinh NVARCHAR(10), @NgaySinh DATE, @DienThoai NVARCHAR(15))
+CREATE PROC SuaNV(@MaNV VARCHAR(50), @TenNV NVARCHAR(50), @GioiTinh NVARCHAR(10), @NgaySinh DATE, @DienThoai NVARCHAR(15))
 AS
 BEGIN
 	UPDATE dbo.NhanVien
@@ -34,7 +34,7 @@ END
 
 -- Thủ tục xóa
 GO
-ALTER PROC XoaNV(@MaNV VARCHAR(50))
+CREATE PROC XoaNV(@MaNV VARCHAR(50))
 AS
 BEGIN
 	UPDATE dbo.PhieuMuonSach

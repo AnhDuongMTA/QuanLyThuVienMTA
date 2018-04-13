@@ -1,6 +1,6 @@
 USE QuanLyThuVienMTA
 GO
-ALTER PROC Xem_SV
+CREATE PROC Xem_SV
 AS
 BEGIN
 	SELECT * FROM dbo.SinhVien

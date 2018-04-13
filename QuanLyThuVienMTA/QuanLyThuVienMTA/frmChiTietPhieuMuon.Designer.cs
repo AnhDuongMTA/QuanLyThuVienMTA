@@ -42,16 +42,16 @@
             this.TienPhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbMuonSach = new System.Windows.Forms.GroupBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.cbMaNV = new System.Windows.Forms.ComboBox();
+            this.cbMaNV0 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnThoatMuon = new System.Windows.Forms.Button();
             this.btnMuon = new System.Windows.Forms.Button();
-            this.dtpNgayTraM = new System.Windows.Forms.DateTimePicker();
-            this.dtpNgayMuonM = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayTra0 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayMuon0 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtMaPMM = new System.Windows.Forms.TextBox();
-            this.txtMaSVM = new System.Windows.Forms.TextBox();
+            this.txtMaPM0 = new System.Windows.Forms.TextBox();
+            this.txtMaSV0 = new System.Windows.Forms.TextBox();
             this.laMaSV = new System.Windows.Forms.Label();
             this.gbThongTinSach = new System.Windows.Forms.GroupBox();
             this.lbSoLuong = new System.Windows.Forms.Label();
@@ -60,7 +60,7 @@
             this.lbNgonNgu = new System.Windows.Forms.Label();
             this.lbTheLoai = new System.Windows.Forms.Label();
             this.lbMaSach = new System.Windows.Forms.Label();
-            this.cbTenSach = new System.Windows.Forms.ComboBox();
+            this.cbTenSach0 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -69,23 +69,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbTenSach = new System.Windows.Forms.Label();
             this.tabTraSach = new System.Windows.Forms.TabPage();
-            this.dgvDSMuonT = new System.Windows.Forms.DataGridView();
-            this.txtMaSach = new System.Windows.Forms.GroupBox();
-            this.btnTimKiemTra = new System.Windows.Forms.Button();
-            this.txtMaSVTK = new System.Windows.Forms.TextBox();
-            this.dtpNgayHenTraT = new System.Windows.Forms.DateTimePicker();
-            this.dtpNgayMuonT = new System.Windows.Forms.DateTimePicker();
-            this.btnTraSach = new System.Windows.Forms.Button();
-            this.btnThoatTra = new System.Windows.Forms.Button();
-            this.btnLamMoi = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtMaSachT = new System.Windows.Forms.TextBox();
-            this.txtMaSVT = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtMaPMT = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.dgvDSMuon1 = new System.Windows.Forms.DataGridView();
             this.STTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaPMT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -95,13 +79,30 @@
             this.NgayTraT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HanMuonT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TienPhatT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtMaSach = new System.Windows.Forms.GroupBox();
+            this.btnTimKiemTra = new System.Windows.Forms.Button();
+            this.txtMaSVTK = new System.Windows.Forms.TextBox();
+            this.dtpNgayHenTra1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayMuon1 = new System.Windows.Forms.DateTimePicker();
+            this.btnTraSach = new System.Windows.Forms.Button();
+            this.btnThoatTra = new System.Windows.Forms.Button();
+            this.btnLamMoi1 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtMaSach1 = new System.Windows.Forms.TextBox();
+            this.txtMaSV1 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtMaPM1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnThoat1 = new System.Windows.Forms.Button();
             this.tabCMuon.SuspendLayout();
             this.tabMuonSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMuon)).BeginInit();
             this.gbMuonSach.SuspendLayout();
             this.gbThongTinSach.SuspendLayout();
             this.tabTraSach.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSMuonT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSMuon1)).BeginInit();
             this.txtMaSach.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -222,16 +223,16 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbMuonSach.BackColor = System.Drawing.Color.PaleTurquoise;
             this.gbMuonSach.Controls.Add(this.label18);
-            this.gbMuonSach.Controls.Add(this.cbMaNV);
+            this.gbMuonSach.Controls.Add(this.cbMaNV0);
             this.gbMuonSach.Controls.Add(this.label1);
             this.gbMuonSach.Controls.Add(this.btnThoatMuon);
             this.gbMuonSach.Controls.Add(this.btnMuon);
-            this.gbMuonSach.Controls.Add(this.dtpNgayTraM);
-            this.gbMuonSach.Controls.Add(this.dtpNgayMuonM);
+            this.gbMuonSach.Controls.Add(this.dtpNgayTra0);
+            this.gbMuonSach.Controls.Add(this.dtpNgayMuon0);
             this.gbMuonSach.Controls.Add(this.label9);
             this.gbMuonSach.Controls.Add(this.label8);
-            this.gbMuonSach.Controls.Add(this.txtMaPMM);
-            this.gbMuonSach.Controls.Add(this.txtMaSVM);
+            this.gbMuonSach.Controls.Add(this.txtMaPM0);
+            this.gbMuonSach.Controls.Add(this.txtMaSV0);
             this.gbMuonSach.Controls.Add(this.laMaSV);
             this.gbMuonSach.Location = new System.Drawing.Point(487, 7);
             this.gbMuonSach.Name = "gbMuonSach";
@@ -249,13 +250,13 @@
             this.label18.TabIndex = 13;
             this.label18.Text = "Mã phiếu mượn";
             // 
-            // cbMaNV
+            // cbMaNV0
             // 
-            this.cbMaNV.FormattingEnabled = true;
-            this.cbMaNV.Location = new System.Drawing.Point(164, 244);
-            this.cbMaNV.Name = "cbMaNV";
-            this.cbMaNV.Size = new System.Drawing.Size(200, 28);
-            this.cbMaNV.TabIndex = 11;
+            this.cbMaNV0.FormattingEnabled = true;
+            this.cbMaNV0.Location = new System.Drawing.Point(164, 244);
+            this.cbMaNV0.Name = "cbMaNV0";
+            this.cbMaNV0.Size = new System.Drawing.Size(200, 28);
+            this.cbMaNV0.TabIndex = 11;
             // 
             // label1
             // 
@@ -286,21 +287,23 @@
             this.btnMuon.UseVisualStyleBackColor = true;
             this.btnMuon.Click += new System.EventHandler(this.btnMuon_Click);
             // 
-            // dtpNgayTraM
+            // dtpNgayTra0
             // 
-            this.dtpNgayTraM.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayTraM.Location = new System.Drawing.Point(164, 183);
-            this.dtpNgayTraM.Name = "dtpNgayTraM";
-            this.dtpNgayTraM.Size = new System.Drawing.Size(200, 28);
-            this.dtpNgayTraM.TabIndex = 6;
+            this.dtpNgayTra0.CustomFormat = "yyyy-MM-dd";
+            this.dtpNgayTra0.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayTra0.Location = new System.Drawing.Point(164, 183);
+            this.dtpNgayTra0.Name = "dtpNgayTra0";
+            this.dtpNgayTra0.Size = new System.Drawing.Size(200, 28);
+            this.dtpNgayTra0.TabIndex = 6;
             // 
-            // dtpNgayMuonM
+            // dtpNgayMuon0
             // 
-            this.dtpNgayMuonM.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayMuonM.Location = new System.Drawing.Point(164, 127);
-            this.dtpNgayMuonM.Name = "dtpNgayMuonM";
-            this.dtpNgayMuonM.Size = new System.Drawing.Size(200, 28);
-            this.dtpNgayMuonM.TabIndex = 5;
+            this.dtpNgayMuon0.CustomFormat = "yyyy-MM-dd";
+            this.dtpNgayMuon0.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayMuon0.Location = new System.Drawing.Point(164, 127);
+            this.dtpNgayMuon0.Name = "dtpNgayMuon0";
+            this.dtpNgayMuon0.Size = new System.Drawing.Size(200, 28);
+            this.dtpNgayMuon0.TabIndex = 5;
             // 
             // label9
             // 
@@ -320,19 +323,19 @@
             this.label8.TabIndex = 2;
             this.label8.Text = "Ngày Mượn";
             // 
-            // txtMaPMM
+            // txtMaPM0
             // 
-            this.txtMaPMM.Location = new System.Drawing.Point(164, 27);
-            this.txtMaPMM.Name = "txtMaPMM";
-            this.txtMaPMM.Size = new System.Drawing.Size(200, 28);
-            this.txtMaPMM.TabIndex = 1;
+            this.txtMaPM0.Location = new System.Drawing.Point(164, 27);
+            this.txtMaPM0.Name = "txtMaPM0";
+            this.txtMaPM0.Size = new System.Drawing.Size(200, 28);
+            this.txtMaPM0.TabIndex = 1;
             // 
-            // txtMaSVM
+            // txtMaSV0
             // 
-            this.txtMaSVM.Location = new System.Drawing.Point(164, 78);
-            this.txtMaSVM.Name = "txtMaSVM";
-            this.txtMaSVM.Size = new System.Drawing.Size(200, 28);
-            this.txtMaSVM.TabIndex = 1;
+            this.txtMaSV0.Location = new System.Drawing.Point(164, 78);
+            this.txtMaSV0.Name = "txtMaSV0";
+            this.txtMaSV0.Size = new System.Drawing.Size(200, 28);
+            this.txtMaSV0.TabIndex = 1;
             // 
             // laMaSV
             // 
@@ -355,7 +358,7 @@
             this.gbThongTinSach.Controls.Add(this.lbNgonNgu);
             this.gbThongTinSach.Controls.Add(this.lbTheLoai);
             this.gbThongTinSach.Controls.Add(this.lbMaSach);
-            this.gbThongTinSach.Controls.Add(this.cbTenSach);
+            this.gbThongTinSach.Controls.Add(this.cbTenSach0);
             this.gbThongTinSach.Controls.Add(this.label7);
             this.gbThongTinSach.Controls.Add(this.label6);
             this.gbThongTinSach.Controls.Add(this.label5);
@@ -418,15 +421,15 @@
             this.lbMaSach.Size = new System.Drawing.Size(0, 21);
             this.lbMaSach.TabIndex = 8;
             // 
-            // cbTenSach
+            // cbTenSach0
             // 
-            this.cbTenSach.FormattingEnabled = true;
-            this.cbTenSach.Location = new System.Drawing.Point(161, 44);
-            this.cbTenSach.Name = "cbTenSach";
-            this.cbTenSach.Size = new System.Drawing.Size(255, 28);
-            this.cbTenSach.TabIndex = 7;
-            this.cbTenSach.SelectedIndexChanged += new System.EventHandler(this.cbTenSach_SelectedIndexChanged);
-            this.cbTenSach.TextChanged += new System.EventHandler(this.cbTenSach_TextChanged);
+            this.cbTenSach0.FormattingEnabled = true;
+            this.cbTenSach0.Location = new System.Drawing.Point(161, 44);
+            this.cbTenSach0.Name = "cbTenSach0";
+            this.cbTenSach0.Size = new System.Drawing.Size(255, 28);
+            this.cbTenSach0.TabIndex = 7;
+            this.cbTenSach0.SelectedIndexChanged += new System.EventHandler(this.cbTenSach_SelectedIndexChanged);
+            this.cbTenSach0.TextChanged += new System.EventHandler(this.cbTenSach_TextChanged);
             // 
             // label7
             // 
@@ -493,7 +496,7 @@
             // 
             // tabTraSach
             // 
-            this.tabTraSach.Controls.Add(this.dgvDSMuonT);
+            this.tabTraSach.Controls.Add(this.dgvDSMuon1);
             this.tabTraSach.Controls.Add(this.txtMaSach);
             this.tabTraSach.Location = new System.Drawing.Point(4, 29);
             this.tabTraSach.Margin = new System.Windows.Forms.Padding(4);
@@ -504,11 +507,11 @@
             this.tabTraSach.Text = "Trả Sách";
             this.tabTraSach.UseVisualStyleBackColor = true;
             // 
-            // dgvDSMuonT
+            // dgvDSMuon1
             // 
-            this.dgvDSMuonT.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvDSMuonT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSMuonT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvDSMuon1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvDSMuon1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSMuon1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STTT,
             this.MaPMT,
             this.MaNVT,
@@ -518,169 +521,15 @@
             this.NgayTraT,
             this.HanMuonT,
             this.TienPhatT});
-            this.dgvDSMuonT.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvDSMuonT.Location = new System.Drawing.Point(4, 364);
-            this.dgvDSMuonT.Name = "dgvDSMuonT";
-            this.dgvDSMuonT.RowTemplate.Height = 24;
-            this.dgvDSMuonT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSMuonT.Size = new System.Drawing.Size(1045, 387);
-            this.dgvDSMuonT.TabIndex = 3;
-            this.dgvDSMuonT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSMuonT_CellClick);
-            this.dgvDSMuonT.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvDSMuonT_RowPrePaint);
-            // 
-            // txtMaSach
-            // 
-            this.txtMaSach.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.txtMaSach.Controls.Add(this.btnTimKiemTra);
-            this.txtMaSach.Controls.Add(this.txtMaSVTK);
-            this.txtMaSach.Controls.Add(this.dtpNgayHenTraT);
-            this.txtMaSach.Controls.Add(this.dtpNgayMuonT);
-            this.txtMaSach.Controls.Add(this.btnTraSach);
-            this.txtMaSach.Controls.Add(this.btnThoatTra);
-            this.txtMaSach.Controls.Add(this.btnLamMoi);
-            this.txtMaSach.Controls.Add(this.label16);
-            this.txtMaSach.Controls.Add(this.txtMaSachT);
-            this.txtMaSach.Controls.Add(this.txtMaSVT);
-            this.txtMaSach.Controls.Add(this.label15);
-            this.txtMaSach.Controls.Add(this.label13);
-            this.txtMaSach.Controls.Add(this.label12);
-            this.txtMaSach.Controls.Add(this.txtMaPMT);
-            this.txtMaSach.Controls.Add(this.label11);
-            this.txtMaSach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtMaSach.Location = new System.Drawing.Point(4, 4);
-            this.txtMaSach.Name = "txtMaSach";
-            this.txtMaSach.Size = new System.Drawing.Size(1045, 354);
-            this.txtMaSach.TabIndex = 0;
-            this.txtMaSach.TabStop = false;
-            this.txtMaSach.Text = "Thông Tin";
-            // 
-            // btnTimKiemTra
-            // 
-            this.btnTimKiemTra.Location = new System.Drawing.Point(445, 279);
-            this.btnTimKiemTra.Name = "btnTimKiemTra";
-            this.btnTimKiemTra.Size = new System.Drawing.Size(122, 35);
-            this.btnTimKiemTra.TabIndex = 21;
-            this.btnTimKiemTra.Text = "Tìm kiếm";
-            this.btnTimKiemTra.UseVisualStyleBackColor = true;
-            this.btnTimKiemTra.Click += new System.EventHandler(this.btnTimKiemTra_Click);
-            // 
-            // txtMaSVTK
-            // 
-            this.txtMaSVTK.Location = new System.Drawing.Point(167, 283);
-            this.txtMaSVTK.Name = "txtMaSVTK";
-            this.txtMaSVTK.Size = new System.Drawing.Size(242, 28);
-            this.txtMaSVTK.TabIndex = 20;
-            // 
-            // dtpNgayHenTraT
-            // 
-            this.dtpNgayHenTraT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayHenTraT.Location = new System.Drawing.Point(654, 119);
-            this.dtpNgayHenTraT.Name = "dtpNgayHenTraT";
-            this.dtpNgayHenTraT.Size = new System.Drawing.Size(242, 28);
-            this.dtpNgayHenTraT.TabIndex = 19;
-            // 
-            // dtpNgayMuonT
-            // 
-            this.dtpNgayMuonT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayMuonT.Location = new System.Drawing.Point(654, 63);
-            this.dtpNgayMuonT.Name = "dtpNgayMuonT";
-            this.dtpNgayMuonT.Size = new System.Drawing.Size(242, 28);
-            this.dtpNgayMuonT.TabIndex = 18;
-            // 
-            // btnTraSach
-            // 
-            this.btnTraSach.Location = new System.Drawing.Point(654, 279);
-            this.btnTraSach.Name = "btnTraSach";
-            this.btnTraSach.Size = new System.Drawing.Size(91, 35);
-            this.btnTraSach.TabIndex = 17;
-            this.btnTraSach.Text = "Trả sách";
-            this.btnTraSach.UseVisualStyleBackColor = true;
-            this.btnTraSach.Click += new System.EventHandler(this.btnTraSach_Click);
-            // 
-            // btnThoatTra
-            // 
-            this.btnThoatTra.Location = new System.Drawing.Point(1156, 283);
-            this.btnThoatTra.Name = "btnThoatTra";
-            this.btnThoatTra.Size = new System.Drawing.Size(95, 35);
-            this.btnThoatTra.TabIndex = 16;
-            this.btnThoatTra.Text = "Thoát";
-            this.btnThoatTra.UseVisualStyleBackColor = true;
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.Location = new System.Drawing.Point(869, 283);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(122, 35);
-            this.btnLamMoi.TabIndex = 15;
-            this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
-            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(489, 125);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(104, 21);
-            this.label16.TabIndex = 10;
-            this.label16.Text = "Ngày hẹn trả";
-            // 
-            // txtMaSachT
-            // 
-            this.txtMaSachT.Location = new System.Drawing.Point(167, 179);
-            this.txtMaSachT.Name = "txtMaSachT";
-            this.txtMaSachT.Size = new System.Drawing.Size(242, 28);
-            this.txtMaSachT.TabIndex = 7;
-            // 
-            // txtMaSVT
-            // 
-            this.txtMaSVT.Location = new System.Drawing.Point(167, 122);
-            this.txtMaSVT.Name = "txtMaSVT";
-            this.txtMaSVT.Size = new System.Drawing.Size(242, 28);
-            this.txtMaSVT.TabIndex = 6;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(489, 67);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(97, 21);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "Ngày mượn";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(6, 63);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(127, 21);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "Mã phiếu mượn";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(10, 182);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(73, 21);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Mã sách";
-            // 
-            // txtMaPMT
-            // 
-            this.txtMaPMT.Location = new System.Drawing.Point(167, 60);
-            this.txtMaPMT.Name = "txtMaPMT";
-            this.txtMaPMT.Size = new System.Drawing.Size(242, 28);
-            this.txtMaPMT.TabIndex = 1;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 129);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(104, 21);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Mã sinh viên";
+            this.dgvDSMuon1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvDSMuon1.Location = new System.Drawing.Point(4, 364);
+            this.dgvDSMuon1.Name = "dgvDSMuon1";
+            this.dgvDSMuon1.RowTemplate.Height = 24;
+            this.dgvDSMuon1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDSMuon1.Size = new System.Drawing.Size(1045, 387);
+            this.dgvDSMuon1.TabIndex = 3;
+            this.dgvDSMuon1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSMuonT_CellClick);
+            this.dgvDSMuon1.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvDSMuonT_RowPrePaint);
             // 
             // STTT
             // 
@@ -744,6 +593,173 @@
             this.TienPhatT.HeaderText = "Tiền phạt";
             this.TienPhatT.Name = "TienPhatT";
             // 
+            // txtMaSach
+            // 
+            this.txtMaSach.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.txtMaSach.Controls.Add(this.btnThoat1);
+            this.txtMaSach.Controls.Add(this.btnTimKiemTra);
+            this.txtMaSach.Controls.Add(this.txtMaSVTK);
+            this.txtMaSach.Controls.Add(this.dtpNgayHenTra1);
+            this.txtMaSach.Controls.Add(this.dtpNgayMuon1);
+            this.txtMaSach.Controls.Add(this.btnTraSach);
+            this.txtMaSach.Controls.Add(this.btnThoatTra);
+            this.txtMaSach.Controls.Add(this.btnLamMoi1);
+            this.txtMaSach.Controls.Add(this.label16);
+            this.txtMaSach.Controls.Add(this.txtMaSach1);
+            this.txtMaSach.Controls.Add(this.txtMaSV1);
+            this.txtMaSach.Controls.Add(this.label15);
+            this.txtMaSach.Controls.Add(this.label13);
+            this.txtMaSach.Controls.Add(this.label12);
+            this.txtMaSach.Controls.Add(this.txtMaPM1);
+            this.txtMaSach.Controls.Add(this.label11);
+            this.txtMaSach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtMaSach.Location = new System.Drawing.Point(4, 4);
+            this.txtMaSach.Name = "txtMaSach";
+            this.txtMaSach.Size = new System.Drawing.Size(1045, 354);
+            this.txtMaSach.TabIndex = 0;
+            this.txtMaSach.TabStop = false;
+            this.txtMaSach.Text = "Thông Tin";
+            // 
+            // btnTimKiemTra
+            // 
+            this.btnTimKiemTra.Location = new System.Drawing.Point(445, 279);
+            this.btnTimKiemTra.Name = "btnTimKiemTra";
+            this.btnTimKiemTra.Size = new System.Drawing.Size(122, 35);
+            this.btnTimKiemTra.TabIndex = 21;
+            this.btnTimKiemTra.Text = "Tìm kiếm";
+            this.btnTimKiemTra.UseVisualStyleBackColor = true;
+            this.btnTimKiemTra.Click += new System.EventHandler(this.btnTimKiemTra_Click);
+            // 
+            // txtMaSVTK
+            // 
+            this.txtMaSVTK.Location = new System.Drawing.Point(167, 283);
+            this.txtMaSVTK.Name = "txtMaSVTK";
+            this.txtMaSVTK.Size = new System.Drawing.Size(242, 28);
+            this.txtMaSVTK.TabIndex = 20;
+            // 
+            // dtpNgayHenTra1
+            // 
+            this.dtpNgayHenTra1.CustomFormat = "yyyy-MM-dd";
+            this.dtpNgayHenTra1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayHenTra1.Location = new System.Drawing.Point(654, 119);
+            this.dtpNgayHenTra1.Name = "dtpNgayHenTra1";
+            this.dtpNgayHenTra1.Size = new System.Drawing.Size(242, 28);
+            this.dtpNgayHenTra1.TabIndex = 19;
+            // 
+            // dtpNgayMuon1
+            // 
+            this.dtpNgayMuon1.CustomFormat = "yyyy-MM-dd";
+            this.dtpNgayMuon1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayMuon1.Location = new System.Drawing.Point(654, 63);
+            this.dtpNgayMuon1.Name = "dtpNgayMuon1";
+            this.dtpNgayMuon1.Size = new System.Drawing.Size(242, 28);
+            this.dtpNgayMuon1.TabIndex = 18;
+            // 
+            // btnTraSach
+            // 
+            this.btnTraSach.Location = new System.Drawing.Point(605, 279);
+            this.btnTraSach.Name = "btnTraSach";
+            this.btnTraSach.Size = new System.Drawing.Size(91, 35);
+            this.btnTraSach.TabIndex = 17;
+            this.btnTraSach.Text = "Trả sách";
+            this.btnTraSach.UseVisualStyleBackColor = true;
+            this.btnTraSach.Click += new System.EventHandler(this.btnTraSach_Click);
+            // 
+            // btnThoatTra
+            // 
+            this.btnThoatTra.Location = new System.Drawing.Point(1156, 283);
+            this.btnThoatTra.Name = "btnThoatTra";
+            this.btnThoatTra.Size = new System.Drawing.Size(95, 35);
+            this.btnThoatTra.TabIndex = 16;
+            this.btnThoatTra.Text = "Thoát";
+            this.btnThoatTra.UseVisualStyleBackColor = true;
+            // 
+            // btnLamMoi1
+            // 
+            this.btnLamMoi1.Location = new System.Drawing.Point(728, 279);
+            this.btnLamMoi1.Name = "btnLamMoi1";
+            this.btnLamMoi1.Size = new System.Drawing.Size(122, 35);
+            this.btnLamMoi1.TabIndex = 15;
+            this.btnLamMoi1.Text = "Làm mới";
+            this.btnLamMoi1.UseVisualStyleBackColor = true;
+            this.btnLamMoi1.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(489, 125);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(104, 21);
+            this.label16.TabIndex = 10;
+            this.label16.Text = "Ngày hẹn trả";
+            // 
+            // txtMaSach1
+            // 
+            this.txtMaSach1.Location = new System.Drawing.Point(167, 179);
+            this.txtMaSach1.Name = "txtMaSach1";
+            this.txtMaSach1.Size = new System.Drawing.Size(242, 28);
+            this.txtMaSach1.TabIndex = 7;
+            // 
+            // txtMaSV1
+            // 
+            this.txtMaSV1.Location = new System.Drawing.Point(167, 122);
+            this.txtMaSV1.Name = "txtMaSV1";
+            this.txtMaSV1.Size = new System.Drawing.Size(242, 28);
+            this.txtMaSV1.TabIndex = 6;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(489, 67);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(97, 21);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "Ngày mượn";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 63);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(127, 21);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "Mã phiếu mượn";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(10, 182);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(73, 21);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "Mã sách";
+            // 
+            // txtMaPM1
+            // 
+            this.txtMaPM1.Location = new System.Drawing.Point(167, 60);
+            this.txtMaPM1.Name = "txtMaPM1";
+            this.txtMaPM1.Size = new System.Drawing.Size(242, 28);
+            this.txtMaPM1.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 129);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(104, 21);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Mã sinh viên";
+            // 
+            // btnThoat1
+            // 
+            this.btnThoat1.Location = new System.Drawing.Point(884, 276);
+            this.btnThoat1.Name = "btnThoat1";
+            this.btnThoat1.Size = new System.Drawing.Size(122, 35);
+            this.btnThoat1.TabIndex = 22;
+            this.btnThoat1.Text = "Thoát";
+            this.btnThoat1.UseVisualStyleBackColor = true;
+            this.btnThoat1.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // frmChiTietPhieuMuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
@@ -764,7 +780,7 @@
             this.gbThongTinSach.ResumeLayout(false);
             this.gbThongTinSach.PerformLayout();
             this.tabTraSach.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSMuonT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSMuon1)).EndInit();
             this.txtMaSach.ResumeLayout(false);
             this.txtMaSach.PerformLayout();
             this.ResumeLayout(false);
@@ -786,7 +802,7 @@
         private System.Windows.Forms.Label lbNgonNgu;
         private System.Windows.Forms.Label lbTheLoai;
         private System.Windows.Forms.Label lbMaSach;
-        private System.Windows.Forms.ComboBox cbTenSach;
+        private System.Windows.Forms.ComboBox cbTenSach0;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -794,30 +810,30 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbTenSach;
-        private System.Windows.Forms.DateTimePicker dtpNgayTraM;
-        private System.Windows.Forms.DateTimePicker dtpNgayMuonM;
+        private System.Windows.Forms.DateTimePicker dtpNgayTra0;
+        private System.Windows.Forms.DateTimePicker dtpNgayMuon0;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtMaSVM;
+        private System.Windows.Forms.TextBox txtMaSV0;
         private System.Windows.Forms.Label laMaSV;
         private System.Windows.Forms.Button btnThoatMuon;
         private System.Windows.Forms.Button btnMuon;
-        private System.Windows.Forms.ComboBox cbMaNV;
+        private System.Windows.Forms.ComboBox cbMaNV0;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtMaSachT;
-        private System.Windows.Forms.TextBox txtMaSVT;
+        private System.Windows.Forms.TextBox txtMaSach1;
+        private System.Windows.Forms.TextBox txtMaSV1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtMaPMT;
+        private System.Windows.Forms.TextBox txtMaPM1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnTraSach;
         private System.Windows.Forms.Button btnThoatTra;
-        private System.Windows.Forms.Button btnLamMoi;
+        private System.Windows.Forms.Button btnLamMoi1;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.DateTimePicker dtpNgayHenTraT;
-        private System.Windows.Forms.DateTimePicker dtpNgayMuonT;
-        private System.Windows.Forms.DataGridView dgvDSMuonT;
+        private System.Windows.Forms.DateTimePicker dtpNgayHenTra1;
+        private System.Windows.Forms.DateTimePicker dtpNgayMuon1;
+        private System.Windows.Forms.DataGridView dgvDSMuon1;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPM;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
@@ -828,7 +844,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HanMuon;
         private System.Windows.Forms.DataGridViewTextBoxColumn TienPhat;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox txtMaPMM;
+        private System.Windows.Forms.TextBox txtMaPM0;
         private System.Windows.Forms.Button btnTimKiemTra;
         private System.Windows.Forms.TextBox txtMaSVTK;
         private System.Windows.Forms.DataGridViewTextBoxColumn STTT;
@@ -840,5 +856,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTraT;
         private System.Windows.Forms.DataGridViewTextBoxColumn HanMuonT;
         private System.Windows.Forms.DataGridViewTextBoxColumn TienPhatT;
+        private System.Windows.Forms.Button btnThoat1;
     }
 }
