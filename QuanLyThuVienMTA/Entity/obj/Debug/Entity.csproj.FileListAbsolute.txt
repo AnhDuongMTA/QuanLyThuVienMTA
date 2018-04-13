@@ -18,3 +18,9 @@ D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.dll
 D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.pdb
 D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\bin\Debug\Entity.dll
 D:\GitHub\QLNS\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\bin\Debug\Entity.pdb
+H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\bin\Debug\Entity.dll
+H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\bin\Debug\Entity.pdb
+H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.dll
+H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\Entity\obj\Debug\Entity.pdb
