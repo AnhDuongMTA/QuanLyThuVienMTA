@@ -179,9 +179,11 @@ namespace QuanLyThuVienMTA
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn hủy thao tác đang làm?", "Xác nhận hủy", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn thoát?", "Xác nhận ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
+                frmMain main = new frmMain();
+                main.Show();
                 this.Close();
             }
             else

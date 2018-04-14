@@ -34,7 +34,7 @@ namespace QuanLyThuVienMTA
                     nd.MatKhau = dt.Rows[i].ToString();
                 }
                 this.Hide();
-                frmNhanVien main = new frmNhanVien();
+                frmMain main = new frmMain();
                 main.Show();
 
             }

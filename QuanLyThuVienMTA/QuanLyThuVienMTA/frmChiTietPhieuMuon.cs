@@ -74,6 +74,9 @@ namespace QuanLyThuVienMTA
             DialogResult dr = MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Xác Nhận Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
+
+                frmMain main = new frmMain();
+                main.Show();
                 this.Close();
             }
             else

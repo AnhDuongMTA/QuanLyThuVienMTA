@@ -39,6 +39,7 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.Location = new System.Drawing.Point(317, 316);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
@@ -109,9 +110,11 @@
             // 
             // frmDangNhap
             // 
+            this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CancelButton = this.btnThoat;
             this.ClientSize = new System.Drawing.Size(589, 391);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);

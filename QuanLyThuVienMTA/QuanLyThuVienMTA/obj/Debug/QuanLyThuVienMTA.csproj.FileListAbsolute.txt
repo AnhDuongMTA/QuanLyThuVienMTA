@@ -116,3 +116,4 @@ G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThu
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmViTri.resources
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.Properties.Resources.resources
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.csproj.GenerateResource.Cache
+H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmMain.resources
