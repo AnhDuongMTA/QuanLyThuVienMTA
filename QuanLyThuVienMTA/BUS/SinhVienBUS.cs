@@ -15,10 +15,10 @@ namespace BUS
         {
             return da.GetData();
         }
-        //public string TangMa()
-        //{
-          //  return da.TangMa();
-        //}
+        public string TangMa()
+        {
+            return da.TangMa();
+        }
         public int ThemSV(SinhVienEntity sv)
         {
             return da.ThemSV(sv);

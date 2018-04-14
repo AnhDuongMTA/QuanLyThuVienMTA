@@ -16,6 +16,10 @@ namespace BUS
         {
             return da.GetData();
         }
+        public DataTable ViTriSach(string str)
+        {
+            return da.ViTriSach(str);
+        }
         public DataTable TimKiemSach(string strTimKiem)
         {
             return da.TimKiemSach(strTimKiem);

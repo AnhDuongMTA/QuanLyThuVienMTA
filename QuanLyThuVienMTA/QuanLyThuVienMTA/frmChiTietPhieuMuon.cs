@@ -190,5 +190,10 @@ namespace QuanLyThuVienMTA
                 HienThiDSPM();
             }
         }
+
+        private void gbThongTinSach_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

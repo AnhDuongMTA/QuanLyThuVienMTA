@@ -23,5 +23,10 @@ namespace QuanLyThuVienMTA
         {
             dgvDSSach.DataSource = bus.GetDataTTSach(frmViTri.Ma);
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

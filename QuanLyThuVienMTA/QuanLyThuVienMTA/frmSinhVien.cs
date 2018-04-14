@@ -54,16 +54,16 @@ namespace QuanLyThuVienMTA
         private void btnThem_Click(object sender, EventArgs e)
         {
             fluu = 0;
-           // txtMaSV.Text = bus.TangMa();
+           txtMaSV.Text = bus.TangMa();
             DisEnl(true);
-            txtMaSV.Enabled = true;
+            txtMaSV.Enabled = false;
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
             fluu = 1;
             DisEnl(true);
-            txtMaSV.Enabled = true;
+            txtMaSV.Enabled = false;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -201,6 +201,10 @@ namespace QuanLyThuVienMTA
             {
                 dgvSV.DataSource = bus.TimKiemSV("select * from SinhVien where TenSV like '%" + txtTimKiem.Text + "%'");
             }
+            if (cbTimKiem.Text == "Theo Giới Tính")
+            {
+                dgvSV.DataSource = bus.TimKiemSV("select * from SinhVien where GioiTinh like '%" + txtTimKiem.Text + "%'");
+            }
             if (cbTimKiem.Text == "Theo Ngày Sinh")
             {
                 dgvSV.DataSource = bus.TimKiemSV("select * from SinhVien where NgaySinh like '%" + txtTimKiem.Text + "%'");
@@ -233,6 +237,7 @@ namespace QuanLyThuVienMTA
             }
             else
             {
+                txtMaSV.Text= Convert.ToString(dgvSV.CurrentRow.Cells["MaSV"].Value);
                 txtTenSV.Text = Convert.ToString(dgvSV.CurrentRow.Cells["TenSV"].Value);
                 txtSDT.Text = Convert.ToString(dgvSV.CurrentRow.Cells["SDT"].Value);
                 dtpNgaySinh.Text = Convert.ToString(dgvSV.CurrentRow.Cells["NgaySinh"].Value);

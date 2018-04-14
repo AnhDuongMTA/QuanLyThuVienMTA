@@ -30,8 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmViTri));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtViTri = new System.Windows.Forms.TextBox();
+            this.txtTen = new System.Windows.Forms.TextBox();
+            this.txtMa = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvViTri = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ViTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
@@ -43,20 +53,10 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnLamMoi = new System.Windows.Forms.Button();
-            this.txtMa = new System.Windows.Forms.TextBox();
-            this.txtTen = new System.Windows.Forms.TextBox();
-            this.txtViTri = new System.Windows.Forms.TextBox();
             this.btnTTViTri = new System.Windows.Forms.Button();
             this.btnTTSach = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenKe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ViTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvViTri)).BeginInit();
@@ -79,6 +79,54 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Vị Trí Sách:";
+            // 
+            // txtViTri
+            // 
+            this.txtViTri.Location = new System.Drawing.Point(101, 161);
+            this.txtViTri.Name = "txtViTri";
+            this.txtViTri.Size = new System.Drawing.Size(173, 25);
+            this.txtViTri.TabIndex = 1;
+            // 
+            // txtTen
+            // 
+            this.txtTen.Location = new System.Drawing.Point(101, 110);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(173, 25);
+            this.txtTen.TabIndex = 1;
+            // 
+            // txtMa
+            // 
+            this.txtMa.Location = new System.Drawing.Point(101, 57);
+            this.txtMa.Name = "txtMa";
+            this.txtMa.Size = new System.Drawing.Size(173, 25);
+            this.txtMa.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 169);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 17);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Vị Trí :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 113);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 17);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tên Kệ: ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Mã Vị Trí : ";
             // 
             // groupBox2
             // 
@@ -105,6 +153,33 @@
             this.dgvViTri.TabIndex = 0;
             this.dgvViTri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvViTri_CellClick);
             this.dgvViTri.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvViTri_RowPrePaint);
+            // 
+            // STT
+            // 
+            this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            // 
+            // MaVT
+            // 
+            this.MaVT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaVT.DataPropertyName = "MaVT";
+            this.MaVT.HeaderText = "Mã Vị Trí Sách";
+            this.MaVT.Name = "MaVT";
+            // 
+            // TenKe
+            // 
+            this.TenKe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenKe.DataPropertyName = "TenKe";
+            this.TenKe.HeaderText = "Tên Kệ Sách";
+            this.TenKe.Name = "TenKe";
+            // 
+            // ViTri
+            // 
+            this.ViTri.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ViTri.DataPropertyName = "ViTri";
+            this.ViTri.HeaderText = "Vị Trí ";
+            this.ViTri.Name = "ViTri";
             // 
             // btnThoat
             // 
@@ -212,7 +287,7 @@
             this.cmbTimKiem.Items.AddRange(new object[] {
             "Theo Mã Vị Trí",
             "Theo Tên Kệ",
-            "Theo Vị Trí "});
+            "Theo Vị Trí"});
             this.cmbTimKiem.Location = new System.Drawing.Point(608, 22);
             this.cmbTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTimKiem.Name = "cmbTimKiem";
@@ -268,33 +343,6 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "Quản Lý Vị Trí Sách  ";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Mã Vị Trí : ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 113);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 17);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Tên Kệ: ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 169);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 17);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Vị Trí :";
-            // 
             // btnLamMoi
             // 
             this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
@@ -307,27 +355,6 @@
             this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLamMoi.UseVisualStyleBackColor = true;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
-            // 
-            // txtMa
-            // 
-            this.txtMa.Location = new System.Drawing.Point(101, 57);
-            this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(173, 25);
-            this.txtMa.TabIndex = 1;
-            // 
-            // txtTen
-            // 
-            this.txtTen.Location = new System.Drawing.Point(101, 110);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(173, 25);
-            this.txtTen.TabIndex = 1;
-            // 
-            // txtViTri
-            // 
-            this.txtViTri.Location = new System.Drawing.Point(101, 161);
-            this.txtViTri.Name = "txtViTri";
-            this.txtViTri.Size = new System.Drawing.Size(173, 25);
-            this.txtViTri.TabIndex = 1;
             // 
             // btnTTViTri
             // 
@@ -360,38 +387,11 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Xem Thông Tin Chi Tiết Vị Trí Sách:";
             // 
-            // STT
-            // 
-            this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
-            // 
-            // MaVT
-            // 
-            this.MaVT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaVT.DataPropertyName = "MaVT";
-            this.MaVT.HeaderText = "Mã Vị Trí Sách";
-            this.MaVT.Name = "MaVT";
-            // 
-            // TenKe
-            // 
-            this.TenKe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenKe.DataPropertyName = "TenKe";
-            this.TenKe.HeaderText = "Tên Kệ Sách";
-            this.TenKe.Name = "TenKe";
-            // 
-            // ViTri
-            // 
-            this.ViTri.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ViTri.DataPropertyName = "ViTri";
-            this.ViTri.HeaderText = "Vị Trí ";
-            this.ViTri.Name = "ViTri";
-            // 
             // frmViTri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(1020, 516);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnLamMoi);
@@ -409,7 +409,9 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "frmViTri";
             this.Text = "frmViTri";
             this.Load += new System.EventHandler(this.frmViTri_Load);

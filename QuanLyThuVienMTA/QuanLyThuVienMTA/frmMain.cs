@@ -30,7 +30,7 @@ namespace QuanLyThuVienMTA
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn thoát?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
                 Application.Exit();
@@ -41,7 +41,7 @@ namespace QuanLyThuVienMTA
         {
             frmChiTietPhieuMuon ms = new frmChiTietPhieuMuon();
             ms.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace QuanLyThuVienMTA
 
             frmNhanVien nv = new frmNhanVien();
             nv.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void quảnLýDinhViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace QuanLyThuVienMTA
 
             frmSinhVien sv = new frmSinhVien();
             sv.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void quảnLýSáchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace QuanLyThuVienMTA
 
             frmSach s = new frmSach();
             s.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void quảnLýVịTríSáchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -73,7 +73,7 @@ namespace QuanLyThuVienMTA
 
             frmViTri vt = new frmViTri();
             vt.Show();
-            this.Hide();
+            this.Close();
         }
 
         private int i = 10;
@@ -97,7 +97,7 @@ namespace QuanLyThuVienMTA
 
             frmChiTietPhieuMuon ms = new frmChiTietPhieuMuon();
             ms.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void toolStripQLNV_Click(object sender, EventArgs e)
@@ -105,7 +105,7 @@ namespace QuanLyThuVienMTA
 
             frmNhanVien nv = new frmNhanVien();
             nv.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void toolStripQLSV_Click(object sender, EventArgs e)
@@ -113,7 +113,7 @@ namespace QuanLyThuVienMTA
 
             frmSinhVien sv = new frmSinhVien();
             sv.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void toolStripQLS_Click(object sender, EventArgs e)
@@ -122,7 +122,7 @@ namespace QuanLyThuVienMTA
 
             frmSach s = new frmSach();
             s.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void toolStripVTS_Click(object sender, EventArgs e)
@@ -130,7 +130,7 @@ namespace QuanLyThuVienMTA
 
             frmViTri vt = new frmViTri();
             vt.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void toolStripThoat_Click(object sender, EventArgs e)

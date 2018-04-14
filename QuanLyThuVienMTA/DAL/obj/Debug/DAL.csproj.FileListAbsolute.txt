@@ -42,3 +42,10 @@ G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\Entity.pdb
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.dll
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.pdb
+C:\Users\ADMIN\Desktop\quanllythuvienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\DAL.dll
+C:\Users\ADMIN\Desktop\quanllythuvienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Desktop\quanllythuvienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\Entity.dll
+C:\Users\ADMIN\Desktop\quanllythuvienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\bin\Debug\Entity.pdb
+C:\Users\ADMIN\Desktop\quanllythuvienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\quanllythuvienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.dll
+C:\Users\ADMIN\Desktop\quanllythuvienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\DAL\obj\Debug\DAL.pdb

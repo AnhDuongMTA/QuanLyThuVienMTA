@@ -179,6 +179,7 @@ namespace QuanLyThuVienMTA
         {
             txtTimKiem.Text = "";
             cmbTimKiem.Text = "";
+            HienThi();
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
@@ -191,7 +192,7 @@ namespace QuanLyThuVienMTA
             {
                 dgvViTri.DataSource = Bus.TimKiemViTri("select * from ViTriSach where TenKe like '%" + txtTimKiem.Text + "%'");
             }
-            if (cmbTimKiem.Text == "Theo Tác Giả")
+            if (cmbTimKiem.Text == "Theo Vị Trí")
             {
                 dgvViTri.DataSource = Bus.TimKiemViTri("select * from ViTriSach where ViTri like '%" + txtTimKiem.Text + "%'");
             }

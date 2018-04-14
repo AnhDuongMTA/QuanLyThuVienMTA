@@ -49,10 +49,10 @@ namespace DAL
             };
             return conn.ExcuteSQL("Xoa_SV", para);
         }
-       // public string TangMa()
-        //{
-          //  return conn.TangMa("SELECT * FROM SinhVien", "SV");
-        //}
+        public string TangMa()
+        {
+            return conn.TangMa("SELECT * FROM SinhVien", "SV");
+        }
         public DataTable TimKiemSV(string str)
         {
             return conn.GetData(str);

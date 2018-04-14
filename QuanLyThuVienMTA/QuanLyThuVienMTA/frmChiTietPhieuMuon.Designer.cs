@@ -135,7 +135,7 @@
             // 
             // dgvMuon
             // 
-            this.dgvMuon.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvMuon.BackgroundColor = System.Drawing.SystemColors.ControlDark;
             this.dgvMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMuon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
@@ -148,11 +148,11 @@
             this.HanMuon,
             this.TienPhat});
             this.dgvMuon.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvMuon.Location = new System.Drawing.Point(4, 380);
+            this.dgvMuon.Location = new System.Drawing.Point(4, 418);
             this.dgvMuon.Name = "dgvMuon";
             this.dgvMuon.RowTemplate.Height = 24;
             this.dgvMuon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMuon.Size = new System.Drawing.Size(1045, 337);
+            this.dgvMuon.Size = new System.Drawing.Size(1045, 299);
             this.dgvMuon.TabIndex = 2;
             this.dgvMuon.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvMuon_RowPrePaint);
             // 
@@ -221,7 +221,7 @@
             this.gbMuonSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gbMuonSach.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.gbMuonSach.BackColor = System.Drawing.Color.CadetBlue;
             this.gbMuonSach.Controls.Add(this.label18);
             this.gbMuonSach.Controls.Add(this.cbMaNV0);
             this.gbMuonSach.Controls.Add(this.label1);
@@ -236,7 +236,7 @@
             this.gbMuonSach.Controls.Add(this.laMaSV);
             this.gbMuonSach.Location = new System.Drawing.Point(487, 7);
             this.gbMuonSach.Name = "gbMuonSach";
-            this.gbMuonSach.Size = new System.Drawing.Size(562, 363);
+            this.gbMuonSach.Size = new System.Drawing.Size(562, 405);
             this.gbMuonSach.TabIndex = 1;
             this.gbMuonSach.TabStop = false;
             this.gbMuonSach.Text = "Mươn Sách";
@@ -351,7 +351,7 @@
             this.gbThongTinSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gbThongTinSach.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.gbThongTinSach.BackColor = System.Drawing.Color.CadetBlue;
             this.gbThongTinSach.Controls.Add(this.lbSoLuong);
             this.gbThongTinSach.Controls.Add(this.lbNXB);
             this.gbThongTinSach.Controls.Add(this.lbTacGia);
@@ -368,10 +368,11 @@
             this.gbThongTinSach.Controls.Add(this.lbTenSach);
             this.gbThongTinSach.Location = new System.Drawing.Point(7, 7);
             this.gbThongTinSach.Name = "gbThongTinSach";
-            this.gbThongTinSach.Size = new System.Drawing.Size(474, 363);
+            this.gbThongTinSach.Size = new System.Drawing.Size(474, 405);
             this.gbThongTinSach.TabIndex = 0;
             this.gbThongTinSach.TabStop = false;
             this.gbThongTinSach.Text = "Thông Tin Sách";
+            this.gbThongTinSach.Enter += new System.EventHandler(this.gbThongTinSach_Enter);
             // 
             // lbSoLuong
             // 
@@ -502,14 +503,14 @@
             this.tabTraSach.Margin = new System.Windows.Forms.Padding(4);
             this.tabTraSach.Name = "tabTraSach";
             this.tabTraSach.Padding = new System.Windows.Forms.Padding(4);
-            this.tabTraSach.Size = new System.Drawing.Size(1053, 759);
+            this.tabTraSach.Size = new System.Drawing.Size(1053, 721);
             this.tabTraSach.TabIndex = 1;
             this.tabTraSach.Text = "Trả Sách";
             this.tabTraSach.UseVisualStyleBackColor = true;
             // 
             // dgvDSMuon1
             // 
-            this.dgvDSMuon1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvDSMuon1.BackgroundColor = System.Drawing.SystemColors.ControlDark;
             this.dgvDSMuon1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSMuon1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STTT,
@@ -522,7 +523,7 @@
             this.HanMuonT,
             this.TienPhatT});
             this.dgvDSMuon1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvDSMuon1.Location = new System.Drawing.Point(4, 368);
+            this.dgvDSMuon1.Location = new System.Drawing.Point(4, 330);
             this.dgvDSMuon1.Name = "dgvDSMuon1";
             this.dgvDSMuon1.RowTemplate.Height = 24;
             this.dgvDSMuon1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -595,7 +596,7 @@
             // 
             // txtMaSach
             // 
-            this.txtMaSach.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.txtMaSach.BackColor = System.Drawing.Color.CadetBlue;
             this.txtMaSach.Controls.Add(this.btnThoat1);
             this.txtMaSach.Controls.Add(this.btnTimKiemTra);
             this.txtMaSach.Controls.Add(this.txtMaSVTK);
@@ -764,7 +765,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(1061, 750);
             this.Controls.Add(this.tabCMuon);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

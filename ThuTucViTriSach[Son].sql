@@ -40,9 +40,9 @@ BEGIN
 	GROUP BY ViTriSach.MaVT,TenKe,ViTri
 END
 GO 
-CREATE PROC TTSach(@Ma VARCHAR(10))
+ALTER PROC TTSach(@Ma VARCHAR(10))
 AS
 BEGIN
 	SELECT MaSach,TenSach,TacGia,TheLoai,NXB,NgonNgu,LinhVuc,NamXB,TenKe,SoLuong FROM dbo.ChiTietSach, dbo.ViTriSach 
-	WHERE ChiTietSach.MaVT = @Ma
+	WHERE ChiTietSach.MaVT = @Ma AND ChiTietSach.MaVT=ViTriSach.MaVT
 END

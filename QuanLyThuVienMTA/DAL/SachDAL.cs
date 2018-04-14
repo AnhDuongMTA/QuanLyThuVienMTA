@@ -15,6 +15,10 @@ namespace DAL
         {
             return conn.GetData("SP_XemThongTinSach", null);
         }
+        public DataTable ViTriSach(string str)
+        {
+            return conn.GetData(str);
+        }
         public DataTable TimKiemSach(string strTimKiem)
         {
             return conn.GetData(strTimKiem);

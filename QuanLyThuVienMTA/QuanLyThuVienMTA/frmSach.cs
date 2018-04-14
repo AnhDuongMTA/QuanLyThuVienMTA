@@ -23,10 +23,9 @@ namespace QuanLyThuVienMTA
 
         private void frmSach_Load(object sender, EventArgs e)
         {
-            cmbMaViTri.DataSource = sachbus.GetData();
-            cmbMaViTri.DisplayMember = "MaVT";
             HienThi();
             DisEnl(false);
+            
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -93,11 +92,14 @@ namespace QuanLyThuVienMTA
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            
             fluu = 0;
             clearData();
             txtMaSach.Text = sachbus.TangMa();
             DisEnl(true);
             txtMaSach.Enabled = false;
+            cmbMaViTri.DataSource = sachbus.ViTriSach("select * from ViTriSach");
+            cmbMaViTri.DisplayMember = "MaVT";
         }
 
         private void btnSua_Click(object sender, EventArgs e)

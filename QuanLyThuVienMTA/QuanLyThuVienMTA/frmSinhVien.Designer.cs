@@ -30,21 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSinhVien));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbMaSV = new System.Windows.Forms.Label();
-            this.txtMaSV = new System.Windows.Forms.TextBox();
-            this.lbTenSV = new System.Windows.Forms.Label();
-            this.txtTenSV = new System.Windows.Forms.TextBox();
-            this.lbGioiTinh = new System.Windows.Forms.Label();
-            this.txtSDT = new System.Windows.Forms.TextBox();
-            this.lbNgaySinh = new System.Windows.Forms.Label();
-            this.txtLop = new System.Windows.Forms.TextBox();
-            this.lbSDT = new System.Windows.Forms.Label();
-            this.lbLop = new System.Windows.Forms.Label();
-            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.rbNam = new System.Windows.Forms.RadioButton();
             this.rbNu = new System.Windows.Forms.RadioButton();
+            this.rbNam = new System.Windows.Forms.RadioButton();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.txtLop = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtTenSV = new System.Windows.Forms.TextBox();
+            this.txtMaSV = new System.Windows.Forms.TextBox();
+            this.lbLop = new System.Windows.Forms.Label();
+            this.lbSDT = new System.Windows.Forms.Label();
+            this.lbNgaySinh = new System.Windows.Forms.Label();
+            this.lbGioiTinh = new System.Windows.Forms.Label();
+            this.lbTenSV = new System.Windows.Forms.Label();
+            this.lbMaSV = new System.Windows.Forms.Label();
             this.lbQLSV = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbTimKiem = new System.Windows.Forms.ComboBox();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
@@ -53,8 +55,6 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.cbTimKiem = new System.Windows.Forms.ComboBox();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvSV = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,110 +87,10 @@
             this.groupBox1.Controls.Add(this.lbMaSV);
             this.groupBox1.Location = new System.Drawing.Point(1, 53);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(338, 214);
+            this.groupBox1.Size = new System.Drawing.Size(355, 214);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sinh viên";
-            // 
-            // lbMaSV
-            // 
-            this.lbMaSV.AutoSize = true;
-            this.lbMaSV.Location = new System.Drawing.Point(23, 34);
-            this.lbMaSV.Name = "lbMaSV";
-            this.lbMaSV.Size = new System.Drawing.Size(70, 13);
-            this.lbMaSV.TabIndex = 0;
-            this.lbMaSV.Text = "Mã Sinh Viên";
-            // 
-            // txtMaSV
-            // 
-            this.txtMaSV.Location = new System.Drawing.Point(128, 31);
-            this.txtMaSV.Name = "txtMaSV";
-            this.txtMaSV.Size = new System.Drawing.Size(200, 20);
-            this.txtMaSV.TabIndex = 1;
-            // 
-            // lbTenSV
-            // 
-            this.lbTenSV.AutoSize = true;
-            this.lbTenSV.Location = new System.Drawing.Point(23, 59);
-            this.lbTenSV.Name = "lbTenSV";
-            this.lbTenSV.Size = new System.Drawing.Size(74, 13);
-            this.lbTenSV.TabIndex = 0;
-            this.lbTenSV.Text = "Tên Sinh Viên";
-            // 
-            // txtTenSV
-            // 
-            this.txtTenSV.Location = new System.Drawing.Point(128, 61);
-            this.txtTenSV.Name = "txtTenSV";
-            this.txtTenSV.Size = new System.Drawing.Size(200, 20);
-            this.txtTenSV.TabIndex = 1;
-            // 
-            // lbGioiTinh
-            // 
-            this.lbGioiTinh.AutoSize = true;
-            this.lbGioiTinh.Location = new System.Drawing.Point(23, 89);
-            this.lbGioiTinh.Name = "lbGioiTinh";
-            this.lbGioiTinh.Size = new System.Drawing.Size(51, 13);
-            this.lbGioiTinh.TabIndex = 0;
-            this.lbGioiTinh.Text = "Giới Tính";
-            // 
-            // txtSDT
-            // 
-            this.txtSDT.Location = new System.Drawing.Point(128, 144);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(200, 20);
-            this.txtSDT.TabIndex = 1;
-            // 
-            // lbNgaySinh
-            // 
-            this.lbNgaySinh.AutoSize = true;
-            this.lbNgaySinh.Location = new System.Drawing.Point(23, 122);
-            this.lbNgaySinh.Name = "lbNgaySinh";
-            this.lbNgaySinh.Size = new System.Drawing.Size(56, 13);
-            this.lbNgaySinh.TabIndex = 0;
-            this.lbNgaySinh.Text = "Ngày Sinh";
-            // 
-            // txtLop
-            // 
-            this.txtLop.Location = new System.Drawing.Point(128, 176);
-            this.txtLop.Name = "txtLop";
-            this.txtLop.Size = new System.Drawing.Size(200, 20);
-            this.txtLop.TabIndex = 1;
-            // 
-            // lbSDT
-            // 
-            this.lbSDT.AutoSize = true;
-            this.lbSDT.Location = new System.Drawing.Point(23, 151);
-            this.lbSDT.Name = "lbSDT";
-            this.lbSDT.Size = new System.Drawing.Size(75, 13);
-            this.lbSDT.TabIndex = 0;
-            this.lbSDT.Text = "Số Điện Thoại";
-            // 
-            // lbLop
-            // 
-            this.lbLop.AutoSize = true;
-            this.lbLop.Location = new System.Drawing.Point(23, 183);
-            this.lbLop.Name = "lbLop";
-            this.lbLop.Size = new System.Drawing.Size(25, 13);
-            this.lbLop.TabIndex = 0;
-            this.lbLop.Text = "Lớp";
-            // 
-            // dtpNgaySinh
-            // 
-            this.dtpNgaySinh.Location = new System.Drawing.Point(128, 118);
-            this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(200, 20);
-            this.dtpNgaySinh.TabIndex = 2;
-            // 
-            // rbNam
-            // 
-            this.rbNam.AutoSize = true;
-            this.rbNam.Location = new System.Drawing.Point(128, 89);
-            this.rbNam.Name = "rbNam";
-            this.rbNam.Size = new System.Drawing.Size(47, 17);
-            this.rbNam.TabIndex = 3;
-            this.rbNam.TabStop = true;
-            this.rbNam.Text = "Nam";
-            this.rbNam.UseVisualStyleBackColor = true;
             // 
             // rbNu
             // 
@@ -203,14 +103,114 @@
             this.rbNu.Text = "Nữ";
             this.rbNu.UseVisualStyleBackColor = true;
             // 
+            // rbNam
+            // 
+            this.rbNam.AutoSize = true;
+            this.rbNam.Location = new System.Drawing.Point(128, 89);
+            this.rbNam.Name = "rbNam";
+            this.rbNam.Size = new System.Drawing.Size(47, 17);
+            this.rbNam.TabIndex = 3;
+            this.rbNam.TabStop = true;
+            this.rbNam.Text = "Nam";
+            this.rbNam.UseVisualStyleBackColor = true;
+            // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.Location = new System.Drawing.Point(128, 118);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(200, 20);
+            this.dtpNgaySinh.TabIndex = 2;
+            // 
+            // txtLop
+            // 
+            this.txtLop.Location = new System.Drawing.Point(128, 176);
+            this.txtLop.Name = "txtLop";
+            this.txtLop.Size = new System.Drawing.Size(200, 20);
+            this.txtLop.TabIndex = 1;
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(128, 144);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(200, 20);
+            this.txtSDT.TabIndex = 1;
+            // 
+            // txtTenSV
+            // 
+            this.txtTenSV.Location = new System.Drawing.Point(128, 61);
+            this.txtTenSV.Name = "txtTenSV";
+            this.txtTenSV.Size = new System.Drawing.Size(200, 20);
+            this.txtTenSV.TabIndex = 1;
+            // 
+            // txtMaSV
+            // 
+            this.txtMaSV.Location = new System.Drawing.Point(128, 31);
+            this.txtMaSV.Name = "txtMaSV";
+            this.txtMaSV.Size = new System.Drawing.Size(200, 20);
+            this.txtMaSV.TabIndex = 1;
+            // 
+            // lbLop
+            // 
+            this.lbLop.AutoSize = true;
+            this.lbLop.Location = new System.Drawing.Point(23, 183);
+            this.lbLop.Name = "lbLop";
+            this.lbLop.Size = new System.Drawing.Size(25, 13);
+            this.lbLop.TabIndex = 0;
+            this.lbLop.Text = "Lớp";
+            // 
+            // lbSDT
+            // 
+            this.lbSDT.AutoSize = true;
+            this.lbSDT.Location = new System.Drawing.Point(23, 151);
+            this.lbSDT.Name = "lbSDT";
+            this.lbSDT.Size = new System.Drawing.Size(75, 13);
+            this.lbSDT.TabIndex = 0;
+            this.lbSDT.Text = "Số Điện Thoại";
+            // 
+            // lbNgaySinh
+            // 
+            this.lbNgaySinh.AutoSize = true;
+            this.lbNgaySinh.Location = new System.Drawing.Point(23, 122);
+            this.lbNgaySinh.Name = "lbNgaySinh";
+            this.lbNgaySinh.Size = new System.Drawing.Size(56, 13);
+            this.lbNgaySinh.TabIndex = 0;
+            this.lbNgaySinh.Text = "Ngày Sinh";
+            // 
+            // lbGioiTinh
+            // 
+            this.lbGioiTinh.AutoSize = true;
+            this.lbGioiTinh.Location = new System.Drawing.Point(23, 89);
+            this.lbGioiTinh.Name = "lbGioiTinh";
+            this.lbGioiTinh.Size = new System.Drawing.Size(51, 13);
+            this.lbGioiTinh.TabIndex = 0;
+            this.lbGioiTinh.Text = "Giới Tính";
+            // 
+            // lbTenSV
+            // 
+            this.lbTenSV.AutoSize = true;
+            this.lbTenSV.Location = new System.Drawing.Point(23, 59);
+            this.lbTenSV.Name = "lbTenSV";
+            this.lbTenSV.Size = new System.Drawing.Size(74, 13);
+            this.lbTenSV.TabIndex = 0;
+            this.lbTenSV.Text = "Tên Sinh Viên";
+            // 
+            // lbMaSV
+            // 
+            this.lbMaSV.AutoSize = true;
+            this.lbMaSV.Location = new System.Drawing.Point(23, 34);
+            this.lbMaSV.Name = "lbMaSV";
+            this.lbMaSV.Size = new System.Drawing.Size(70, 13);
+            this.lbMaSV.TabIndex = 0;
+            this.lbMaSV.Text = "Mã Sinh Viên";
+            // 
             // lbQLSV
             // 
             this.lbQLSV.AutoSize = true;
-            this.lbQLSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbQLSV.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lbQLSV.Location = new System.Drawing.Point(270, 9);
+            this.lbQLSV.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQLSV.ForeColor = System.Drawing.Color.MediumBlue;
+            this.lbQLSV.Location = new System.Drawing.Point(255, 9);
             this.lbQLSV.Name = "lbQLSV";
-            this.lbQLSV.Size = new System.Drawing.Size(209, 29);
+            this.lbQLSV.Size = new System.Drawing.Size(277, 36);
             this.lbQLSV.TabIndex = 13;
             this.lbQLSV.Text = "Quản Lý Sinh Viên\n";
             // 
@@ -226,12 +226,34 @@
             this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.btnSua);
             this.groupBox2.Controls.Add(this.btnThem);
-            this.groupBox2.Location = new System.Drawing.Point(378, 59);
+            this.groupBox2.Location = new System.Drawing.Point(362, 53);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(441, 208);
+            this.groupBox2.Size = new System.Drawing.Size(457, 214);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
+            // 
+            // cbTimKiem
+            // 
+            this.cbTimKiem.FormattingEnabled = true;
+            this.cbTimKiem.Items.AddRange(new object[] {
+            "Theo Mã",
+            "Theo Tên",
+            "Theo Giới Tính",
+            "Theo Ngày Sinh",
+            "Theo SĐT",
+            "Theo Lớp"});
+            this.cbTimKiem.Location = new System.Drawing.Point(323, 33);
+            this.cbTimKiem.Name = "cbTimKiem";
+            this.cbTimKiem.Size = new System.Drawing.Size(102, 21);
+            this.cbTimKiem.TabIndex = 23;
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(180, 33);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(137, 20);
+            this.txtTimKiem.TabIndex = 22;
             // 
             // btnLamMoi
             // 
@@ -338,34 +360,12 @@
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // cbTimKiem
-            // 
-            this.cbTimKiem.FormattingEnabled = true;
-            this.cbTimKiem.Items.AddRange(new object[] {
-            "Theo Mã",
-            "Theo Tên",
-            "Theo Giới Tính",
-            "Theo Ngày Sinh",
-            "Theo SĐT",
-            "Theo Lớp"});
-            this.cbTimKiem.Location = new System.Drawing.Point(323, 33);
-            this.cbTimKiem.Name = "cbTimKiem";
-            this.cbTimKiem.Size = new System.Drawing.Size(102, 21);
-            this.cbTimKiem.TabIndex = 23;
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.Location = new System.Drawing.Point(180, 33);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(137, 20);
-            this.txtTimKiem.TabIndex = 22;
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dgvSV);
             this.groupBox3.Location = new System.Drawing.Point(1, 273);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(818, 175);
+            this.groupBox3.Size = new System.Drawing.Size(818, 209);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh sách sinh viên";
@@ -384,7 +384,7 @@
             this.dgvSV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSV.Location = new System.Drawing.Point(3, 16);
             this.dgvSV.Name = "dgvSV";
-            this.dgvSV.Size = new System.Drawing.Size(812, 156);
+            this.dgvSV.Size = new System.Drawing.Size(812, 190);
             this.dgvSV.TabIndex = 0;
             this.dgvSV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSV_CellClick);
             this.dgvSV.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvSV_RowPrePaint);
@@ -441,11 +441,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 447);
+            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.ClientSize = new System.Drawing.Size(822, 485);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lbQLSV);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmSinhVien";
             this.Text = "frmSinhVien";
             this.Load += new System.EventHandler(this.frmSinhVien_Load);

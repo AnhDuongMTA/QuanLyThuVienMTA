@@ -195,6 +195,10 @@ namespace QuanLyThuVienMTA
             {
                 dgvNhanVien.DataSource = Bus.TimKiemNV("select * from NhanVien where TenNV like '%" + txtTimKiem.Text + "%'");
             }
+            if (cbTimKiem.Text == "Theo Giới Tính")
+            {
+                dgvNhanVien.DataSource = Bus.TimKiemNV("select * from NhanVien where GioiTinh like '%" + txtTimKiem.Text + "%'");
+            }
             if (cbTimKiem.Text == "Theo Ngày Sinh")
             {
                 dgvNhanVien.DataSource = Bus.TimKiemNV("select * from NhanVien where NgaySinh like '%" + txtTimKiem.Text + "%'");
