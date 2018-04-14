@@ -197,7 +197,7 @@ namespace QuanLyThuVienMTA
             }
             if (cbTimKiem.Text == "Theo Giới Tính")
             {
-                dgvNhanVien.DataSource = Bus.TimKiemNV("select * from NhanVien where GioiTinh like '%" + txtTimKiem.Text + "%'");
+                dgvNhanVien.DataSource = Bus.TimKiemNV("select * from NhanVien where GioiTinh like N'%" + txtTimKiem.Text + "%'");
             }
             if (cbTimKiem.Text == "Theo Ngày Sinh")
             {
