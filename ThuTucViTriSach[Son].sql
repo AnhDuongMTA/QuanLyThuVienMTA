@@ -1,7 +1,12 @@
-CREATE PROC XemThongTinViTri 
+USE QuanLyThuVienMTA
+GO
+
+ALTER PROC XemThongTinViTri 
 AS
 BEGIN
-	SELECT*FROM dbo.ViTriSach
+	SELECT ViTriSach.MaVT,TenKe,ViTri,COUNT(MaSach) AS SoLuong FROM dbo.ViTriSach,dbo.ChiTietSach
+	WHERE ChiTietSach.MaVT = ViTriSach.MaVT
+	GROUP BY  ViTriSach.MaVT,TenKe,ViTri
 END
 GO
 CREATE PROC ThemViTri (@MaVT VARCHAR(10),@TenKe NVARCHAR(50),@ViTri NVARCHAR(50))
@@ -40,9 +45,9 @@ BEGIN
 	GROUP BY ViTriSach.MaVT,TenKe,ViTri
 END
 GO 
-ALTER PROC TTSach(@Ma VARCHAR(10))
+CREATE PROC TTSach(@Ma VARCHAR(10))
 AS
 BEGIN
 	SELECT MaSach,TenSach,TacGia,TheLoai,NXB,NgonNgu,LinhVuc,NamXB,TenKe,SoLuong FROM dbo.ChiTietSach, dbo.ViTriSach 
-	WHERE ChiTietSach.MaVT = @Ma AND ChiTietSach.MaVT=ViTriSach.MaVT
+	WHERE ChiTietSach.MaVT = @Ma
 END
