@@ -43,4 +43,12 @@ CREATE PROC [dbo].[SP_XoaPhieuMuon] @MaPM VARCHAR(15)
  END 
 
 
+ --cập nhật số lượng sách sau khi mượn trả
+ GO 
+ CREATE PROC SP_CapNhatSoLuongSach @MaSach VARCHAR(5), @SoLuong INT 
+ AS
+ BEGIN
+	UPDATE dbo.ChiTietSach SET SoLuong = SoLuong + @SoLuong
+	WHERE MaSach = @MaSach
+ end
  

@@ -57,6 +57,17 @@ namespace DAL
         };
             return conn.ExcuteSQL("SP_SuaSach ", para);
         }
+
+        public int CapNhatSoLuong(Sach sach)
+        {
+            SqlParameter[] para =
+            {
+                 new SqlParameter("MaSach",sach.MaSach),
+                new SqlParameter ("SoLuong",sach.SoLuong)
+        };
+            return conn.ExcuteSQL("SP_CapNhatSoLuongSach ", para);
+        }
+
         public int XoaSach(string ID)
         {
             SqlParameter[] para =
@@ -69,5 +80,7 @@ namespace DAL
         {
             return conn.TangMa("Select * From ChiTietSach", "MS");
         }
+
+
     }
 }

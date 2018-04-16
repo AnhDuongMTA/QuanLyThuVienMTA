@@ -40,5 +40,10 @@ namespace BUS
         {
             return da.TangMa();
         }
+
+        public int CapNhatSoLuong(Sach s)
+        {
+            return da.CapNhatSoLuong(s);
+        }
     }
 }

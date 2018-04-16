@@ -15,8 +15,11 @@ namespace QuanLyThuVienMTA
     {
         ChiTietPhieuMuon ctpm = new ChiTietPhieuMuon();
         ChiTietPhieuMuonBUS ctpmBUS = new ChiTietPhieuMuonBUS();
-        SachBUS SachBUS = new SachBUS();
-        NhanVienBUS nvBUS = new NhanVienBUS();
+        SachBUS busSach = new SachBUS();
+        Sach EntitySach = new Sach();
+        NhanVienBUS busNhanVien = new NhanVienBUS();
+
+
 
         public frmChiTietPhieuMuon()
         {
@@ -26,7 +29,7 @@ namespace QuanLyThuVienMTA
         public void HienThiDSPM()
         {
             dgvMuon.DataSource =  ctpmBUS.GetData();
-            dgvDSMuon1.DataSource = ctpmBUS.GetData();
+            dgvDSMuon_Tra.DataSource = ctpmBUS.GetData();
             ShowTenSach();
             ShowMaNV();
         }
@@ -34,27 +37,37 @@ namespace QuanLyThuVienMTA
         public void ShowMaNV()
         {
             DataTable dt = new DataTable();
-            dt = nvBUS.GetData();
-            cbMaNV0.DataSource = dt.Copy();
-            cbMaNV0.DisplayMember = "MaNV";
-            cbMaNV0.ValueMember = "MaNV";
+            dt = busNhanVien.GetData();
+            cbMaNV_Muon.DataSource = dt.Copy();
+            cbMaNV_Muon.DisplayMember = "MaNV";
+            cbMaNV_Muon.ValueMember = "MaNV";
 
         }
-        public void Clear()
+        public void ClearTxtTra()
         {
-            txtMaSach1.Text = "";
-            txtMaPM1.Text = "";
-            txtMaSV1.Text = "";
-            dtpNgayHenTra1.Text = "";
-            dtpNgayMuon1.Text = "";
-            //txtSoLuongTra.Text = "";
+            txtMaSach_Tra.Text = "";
+            txtMaPM_Tra.Text = "";
+            txtMaSV_Tra.Text = "";
+            dtpNgayHenTra_Tra.Text = "";
+            dtpNgayMuon_Tra.Text = "";
+            
+
+        }
+        public void ClearTxtMuon()
+        {
+            txtMaPM_Muon.Text = "";
+            txtMaSV_Muon.Text = "";
+           // txtMaSVTK.Text = "";
+            dtpNgayTra_Muon.Text = "";
+            dtpNgayMuon_Muon.Text = "";
+           
 
         }
 
         public void ShowTenSach()
         {
             DataTable dt = new DataTable();
-            dt = SachBUS.GetData();
+            dt = busSach.GetData();
             cbTenSach0 .DataSource = dt.Copy();
             cbTenSach0.DisplayMember = "TenSach";
             cbTenSach0.ValueMember = "TenSach";
@@ -104,51 +117,60 @@ namespace QuanLyThuVienMTA
 
         private void btnMuon_Click(object sender, EventArgs e)
         {
-            if (cbMaNV0.Text==""|| txtMaPM0.Text=="")
+            if (cbMaNV_Muon.Text==""|| txtMaPM_Muon.Text=="")
             {
                 MessageBox.Show("Hãy nhập đầy đủ thông tin!");
             }
             else {
-                ctpm.MaNV = cbMaNV0.Text;
-                ctpm.MaPM = txtMaPM0.Text;
+                ctpm.MaNV = cbMaNV_Muon.Text;
+                ctpm.MaPM = txtMaPM_Muon.Text;
                 ctpm.MaSach = lbMaSach.Text;
-                ctpm.MaSV = txtMaSV0.Text;
-                ctpm.NgayMuon = dtpNgayMuon0.Text;
-                ctpm.NgayTra = dtpNgayTra0.Text;
+                ctpm.MaSV = txtMaSV_Muon.Text;
+                ctpm.NgayMuon = dtpNgayMuon_Muon.Text;
+                ctpm.NgayTra = dtpNgayTra_Muon.Text;
                 ctpm.TienPhat = 0;
 
-                // ctpm.SoLuong = Convert.ToInt32(txtSoLuong.Text);
+                EntitySach.MaSach = lbMaSach.Text;
+                EntitySach.SoLuong = -1;
+
+                busSach.CapNhatSoLuong(EntitySach);
 
                 ctpmBUS.ThemPhieuMuon(ctpm);
                 ctpmBUS.ThemCTPM(ctpm);
                 MessageBox.Show("Thêm thành công!");
+                ClearTxtMuon();
                 HienThiDSPM();
             }
         }
 
         private void btnTraSach_Click(object sender, EventArgs e)
         {
-            if (txtMaPM1.Text=="" || txtMaSach1.Text=="")
+            if (txtMaPM_Tra.Text=="" || txtMaSach_Tra.Text=="")
             {
                 MessageBox.Show("Chưa nhập thông tin đầy đủ!");
 
             }
             else{
-                ctpmBUS.XoaCTPM(txtMaPM1.Text, txtMaSach1.Text);
-                ctpmBUS.XoaPhieuMuon(txtMaPM1.Text);
+                EntitySach.MaSach = txtMaSach_Tra.Text;
+                EntitySach.SoLuong = 1;
+
+                busSach.CapNhatSoLuong(EntitySach);
+
+                ctpmBUS.XoaCTPM(txtMaPM_Tra.Text, txtMaSach_Tra.Text);
+                ctpmBUS.XoaPhieuMuon(txtMaPM_Tra.Text);
                 MessageBox.Show("Trả thành công!");
-                Clear();
+                ClearTxtTra();
                 HienThiDSPM();
             }
         }
 
         private void dgvDSMuonT_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtMaPM1.Text = Convert.ToString(dgvDSMuon1.CurrentRow.Cells["MaPMT"].Value);
-            txtMaSach1.Text = Convert.ToString(dgvDSMuon1.CurrentRow.Cells["MaSachT"].Value);
-            txtMaSV1.Text = Convert.ToString(dgvDSMuon1.CurrentRow.Cells["MaSVT"].Value);
-            dtpNgayMuon1.Text = Convert.ToString(dgvDSMuon1.CurrentRow.Cells["NgayMuonT"].Value);
-            dtpNgayHenTra1.Text = Convert.ToString(dgvDSMuon1.CurrentRow.Cells["NgayTraT"].Value);
+            txtMaPM_Tra.Text = Convert.ToString(dgvDSMuon_Tra.CurrentRow.Cells["MaPMT"].Value);
+            txtMaSach_Tra.Text = Convert.ToString(dgvDSMuon_Tra.CurrentRow.Cells["MaSachT"].Value);
+            txtMaSV_Tra.Text = Convert.ToString(dgvDSMuon_Tra.CurrentRow.Cells["MaSVT"].Value);
+            dtpNgayMuon_Tra.Text = Convert.ToString(dgvDSMuon_Tra.CurrentRow.Cells["NgayMuonT"].Value);
+            dtpNgayHenTra_Tra.Text = Convert.ToString(dgvDSMuon_Tra.CurrentRow.Cells["NgayTraT"].Value);
         }
 
         private void btnTimKiemTra_Click(object sender, EventArgs e)
@@ -159,18 +181,18 @@ namespace QuanLyThuVienMTA
 
             }
             else
-            dgvDSMuon1.DataSource = ctpmBUS.TimKiemPhieuMuon(txtMaSVTK.Text);
+            dgvDSMuon_Tra.DataSource = ctpmBUS.TimKiemPhieuMuon(txtMaSVTK.Text);
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            dgvDSMuon1.DataSource = ctpmBUS.GetData();
-            Clear();
+            dgvDSMuon_Tra.DataSource = ctpmBUS.GetData();
+            ClearTxtTra();
         }
 
         private void dgvDSMuonT_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
-          dgvDSMuon1.Rows[e.RowIndex].Cells["STTT"].Value = e.RowIndex + 1;
+          dgvDSMuon_Tra.Rows[e.RowIndex].Cells["STTT"].Value = e.RowIndex + 1;
         }
 
         private void dgvMuon_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
