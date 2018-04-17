@@ -23,11 +23,6 @@ namespace DAL
             return _connect.GetData("SELECT cm.MaPM, cm.MaSach, cm.NgayMuon,cm.NgayTra,cm.HanMuon,cm.TienPhat,pm.MaNV,pm.MaSV FROM dbo.ChiTietPhieuMuon cm, dbo.PhieuMuonSach pm WHERE cm.MaPM = pm.MaPM AND pm.MaSV = '"+MaSV+"'");
         }
 
-        public string TangMa()
-        {
-            return _connect.TangMa("Select * From PhieuMuonSach", "PM");
-        }
-
         public int ThemPhieuMuon(ChiTietPhieuMuon pm)
         {
             SqlParameter[] para =
@@ -101,5 +96,9 @@ namespace DAL
             return _connect.ExcuteSQL("SP_XoaCTPM", para);
         }
 
+        public string TangMa()
+        {
+            return _connect.TangMa("Select * From PhieuMuonSach", "PM");
+        }
     }
 }

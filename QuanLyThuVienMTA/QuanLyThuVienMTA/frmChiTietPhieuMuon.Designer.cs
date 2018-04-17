@@ -51,7 +51,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtMaPM_Muon = new System.Windows.Forms.TextBox();
-            this.txtMaSV_Muon = new System.Windows.Forms.TextBox();
             this.laMaSV = new System.Windows.Forms.Label();
             this.gbThongTinSach = new System.Windows.Forms.GroupBox();
             this.lbSoLuong = new System.Windows.Forms.Label();
@@ -96,6 +95,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtMaPM_Tra = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.cbMaSV_muon = new System.Windows.Forms.ComboBox();
             this.tabCMuon.SuspendLayout();
             this.tabMuonSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMuon)).BeginInit();
@@ -222,6 +222,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbMuonSach.BackColor = System.Drawing.Color.CadetBlue;
+            this.gbMuonSach.Controls.Add(this.cbMaSV_muon);
             this.gbMuonSach.Controls.Add(this.label18);
             this.gbMuonSach.Controls.Add(this.cbMaNV_Muon);
             this.gbMuonSach.Controls.Add(this.label1);
@@ -232,7 +233,6 @@
             this.gbMuonSach.Controls.Add(this.label9);
             this.gbMuonSach.Controls.Add(this.label8);
             this.gbMuonSach.Controls.Add(this.txtMaPM_Muon);
-            this.gbMuonSach.Controls.Add(this.txtMaSV_Muon);
             this.gbMuonSach.Controls.Add(this.laMaSV);
             this.gbMuonSach.Location = new System.Drawing.Point(487, 7);
             this.gbMuonSach.Name = "gbMuonSach";
@@ -329,13 +329,6 @@
             this.txtMaPM_Muon.Name = "txtMaPM_Muon";
             this.txtMaPM_Muon.Size = new System.Drawing.Size(200, 28);
             this.txtMaPM_Muon.TabIndex = 1;
-            // 
-            // txtMaSV_Muon
-            // 
-            this.txtMaSV_Muon.Location = new System.Drawing.Point(164, 78);
-            this.txtMaSV_Muon.Name = "txtMaSV_Muon";
-            this.txtMaSV_Muon.Size = new System.Drawing.Size(200, 28);
-            this.txtMaSV_Muon.TabIndex = 1;
             // 
             // laMaSV
             // 
@@ -633,17 +626,17 @@
             // 
             // btnTimKiem_Tra
             // 
-            this.btnTimKiem_Tra.Location = new System.Drawing.Point(445, 279);
+            this.btnTimKiem_Tra.Location = new System.Drawing.Point(10, 276);
             this.btnTimKiem_Tra.Name = "btnTimKiem_Tra";
             this.btnTimKiem_Tra.Size = new System.Drawing.Size(122, 35);
             this.btnTimKiem_Tra.TabIndex = 21;
-            this.btnTimKiem_Tra.Text = "Tìm kiếm";
+            this.btnTimKiem_Tra.Text = "Tìm kiếm ";
             this.btnTimKiem_Tra.UseVisualStyleBackColor = true;
             this.btnTimKiem_Tra.Click += new System.EventHandler(this.btnTimKiemTra_Click);
             // 
             // txtMaSVTK
             // 
-            this.txtMaSVTK.Location = new System.Drawing.Point(167, 283);
+            this.txtMaSVTK.Location = new System.Drawing.Point(167, 279);
             this.txtMaSVTK.Name = "txtMaSVTK";
             this.txtMaSVTK.Size = new System.Drawing.Size(242, 28);
             this.txtMaSVTK.TabIndex = 20;
@@ -668,7 +661,7 @@
             // 
             // btnTraSach
             // 
-            this.btnTraSach.Location = new System.Drawing.Point(605, 279);
+            this.btnTraSach.Location = new System.Drawing.Point(579, 279);
             this.btnTraSach.Name = "btnTraSach";
             this.btnTraSach.Size = new System.Drawing.Size(91, 35);
             this.btnTraSach.TabIndex = 17;
@@ -761,6 +754,14 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Mã sinh viên";
             // 
+            // cbMaSV_muon
+            // 
+            this.cbMaSV_muon.FormattingEnabled = true;
+            this.cbMaSV_muon.Location = new System.Drawing.Point(164, 78);
+            this.cbMaSV_muon.Name = "cbMaSV_muon";
+            this.cbMaSV_muon.Size = new System.Drawing.Size(200, 28);
+            this.cbMaSV_muon.TabIndex = 14;
+            // 
             // frmChiTietPhieuMuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
@@ -815,7 +816,6 @@
         private System.Windows.Forms.DateTimePicker dtpNgayMuon_Muon;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtMaSV_Muon;
         private System.Windows.Forms.Label laMaSV;
         private System.Windows.Forms.Button btnThoatMuon;
         private System.Windows.Forms.Button btnMuon;
@@ -858,5 +858,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HanMuonT;
         private System.Windows.Forms.DataGridViewTextBoxColumn TienPhatT;
         private System.Windows.Forms.Button btnThoat_Tra;
+        private System.Windows.Forms.ComboBox cbMaSV_muon;
     }
 }

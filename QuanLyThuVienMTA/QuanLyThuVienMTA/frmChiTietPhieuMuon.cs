@@ -17,6 +17,7 @@ namespace QuanLyThuVienMTA
         ChiTietPhieuMuonBUS ctpmBUS = new ChiTietPhieuMuonBUS();
         SachBUS busSach = new SachBUS();
         Sach EntitySach = new Sach();
+        SinhVienBUS busSinhVien = new SinhVienBUS();
         NhanVienBUS busNhanVien = new NhanVienBUS();
 
 
@@ -28,19 +29,22 @@ namespace QuanLyThuVienMTA
 
         public void HienThiDSPM()
         {
+            txtMaPM_Muon.Text = ctpmBUS.TangMa();
             dgvMuon.DataSource =  ctpmBUS.GetData();
             dgvDSMuon_Tra.DataSource = ctpmBUS.GetData();
             ShowTenSach();
-            ShowMaNV();
+            ShowMaNV_MaSV();
         }
 
-        public void ShowMaNV()
+        public void ShowMaNV_MaSV()
         {
-            DataTable dt = new DataTable();
-            dt = busNhanVien.GetData();
-            cbMaNV_Muon.DataSource = dt.Copy();
+ 
+            cbMaNV_Muon.DataSource = busNhanVien.GetData();
             cbMaNV_Muon.DisplayMember = "MaNV";
-            cbMaNV_Muon.ValueMember = "MaNV";
+            //cbMaNV_Muon.ValueMember = "MaNV";
+
+            cbMaSV_muon.DataSource = busSinhVien.GetData();
+            cbMaSV_muon.DisplayMember = "MaSV";
 
         }
         public void ClearTxtTra()
@@ -56,7 +60,7 @@ namespace QuanLyThuVienMTA
         public void ClearTxtMuon()
         {
             txtMaPM_Muon.Text = "";
-            txtMaSV_Muon.Text = "";
+            cbMaSV_muon.Text = "";
            // txtMaSVTK.Text = "";
             dtpNgayTra_Muon.Text = "";
             dtpNgayMuon_Muon.Text = "";
@@ -125,7 +129,7 @@ namespace QuanLyThuVienMTA
                 ctpm.MaNV = cbMaNV_Muon.Text;
                 ctpm.MaPM = txtMaPM_Muon.Text;
                 ctpm.MaSach = lbMaSach.Text;
-                ctpm.MaSV = txtMaSV_Muon.Text;
+                ctpm.MaSV = cbMaSV_muon.Text;
                 ctpm.NgayMuon = dtpNgayMuon_Muon.Text;
                 ctpm.NgayTra = dtpNgayTra_Muon.Text;
                 ctpm.TienPhat = 0;

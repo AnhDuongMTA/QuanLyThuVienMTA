@@ -52,3 +52,6 @@ CREATE PROC [dbo].[SP_XoaPhieuMuon] @MaPM VARCHAR(15)
 	WHERE MaSach = @MaSach
  end
  
+ GO
+  DELETE dbo.PhieuMuonSach 
+  WHERE MaPM NOT IN (SELECT MaPM FROM dbo.ChiTietPhieuMuon)
