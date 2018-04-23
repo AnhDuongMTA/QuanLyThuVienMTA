@@ -13,7 +13,7 @@ namespace DAL
         private SqlConnection conn;
         public KetNoi()
         {
-            conn = new SqlConnection(@"Data Source=THANHVUONG\SQLEXPRESS88;Initial Catalog=QuanLyThuVienMTA;Integrated Security=True");
+            conn = new SqlConnection(@"Data Source=MINH-PC;Initial Catalog=QuanLyThuVienMTA;Integrated Security=True");
         }
         public DataTable GetData(string strSql)
         {

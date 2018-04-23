@@ -38,6 +38,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvViTri = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ViTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
@@ -53,11 +58,6 @@
             this.btnTTViTri = new System.Windows.Forms.Button();
             this.btnTTSach = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenKe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ViTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuongDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvViTri)).BeginInit();
@@ -155,6 +155,40 @@
             this.dgvViTri.TabIndex = 0;
             this.dgvViTri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvViTri_CellClick);
             this.dgvViTri.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvViTri_RowPrePaint);
+            // 
+            // STT
+            // 
+            this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            // 
+            // MaVT
+            // 
+            this.MaVT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaVT.DataPropertyName = "MaVT";
+            this.MaVT.HeaderText = "Mã Vị Trí Sách";
+            this.MaVT.Name = "MaVT";
+            // 
+            // TenKe
+            // 
+            this.TenKe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenKe.DataPropertyName = "TenKe";
+            this.TenKe.HeaderText = "Tên Kệ Sách";
+            this.TenKe.Name = "TenKe";
+            // 
+            // ViTri
+            // 
+            this.ViTri.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ViTri.DataPropertyName = "ViTri";
+            this.ViTri.HeaderText = "Vị Trí ";
+            this.ViTri.Name = "ViTri";
+            // 
+            // SoLuongDauSach
+            // 
+            this.SoLuongDauSach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SoLuongDauSach.DataPropertyName = "SoLuongDauSach";
+            this.SoLuongDauSach.HeaderText = "Số Lượng Đầu Sách";
+            this.SoLuongDauSach.Name = "SoLuongDauSach";
             // 
             // btnThoat
             // 
@@ -362,40 +396,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Xem Thông Tin Chi Tiết Vị Trí Sách:";
             // 
-            // STT
-            // 
-            this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
-            // 
-            // MaVT
-            // 
-            this.MaVT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaVT.DataPropertyName = "MaVT";
-            this.MaVT.HeaderText = "Mã Vị Trí Sách";
-            this.MaVT.Name = "MaVT";
-            // 
-            // TenKe
-            // 
-            this.TenKe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenKe.DataPropertyName = "TenKe";
-            this.TenKe.HeaderText = "Tên Kệ Sách";
-            this.TenKe.Name = "TenKe";
-            // 
-            // ViTri
-            // 
-            this.ViTri.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ViTri.DataPropertyName = "ViTri";
-            this.ViTri.HeaderText = "Vị Trí ";
-            this.ViTri.Name = "ViTri";
-            // 
-            // SoLuongDauSach
-            // 
-            this.SoLuongDauSach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SoLuongDauSach.DataPropertyName = "SoLuongDauSach";
-            this.SoLuongDauSach.HeaderText = "Số Lượng Đầu Sách";
-            this.SoLuongDauSach.Name = "SoLuongDauSach";
-            // 
             // frmViTri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
@@ -422,6 +422,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmViTri";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmViTri";
             this.Load += new System.EventHandler(this.frmViTri_Load);
             this.groupBox1.ResumeLayout(false);

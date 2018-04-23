@@ -137,5 +137,11 @@ namespace QuanLyThuVienMTA
         {
             Application.Exit();
         }
+
+        private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmhuongdan hd = new frmhuongdan();
+            hd.Show();
+        }
     }
 }
