@@ -26,21 +26,6 @@ namespace BUS
         {
             return dal.TangMa();
         }
-
-        public int ThemPhieuMuon(ChiTietPhieuMuon pm)
-        {
-            return dal.ThemPhieuMuon(pm);
-        }
-
-        public int SuaPhieuMuon(ChiTietPhieuMuon pm)
-        {
-            return dal.SuaPhieuMuon(pm);
-        }
-
-        public int XoaPhieuMuon(string MaPM)
-        {
-            return dal.XoaPhieuMuon(MaPM);
-        }
         public int ThemCTPM(ChiTietPhieuMuon pm)
         {
             return dal.ThemCTPM(pm);

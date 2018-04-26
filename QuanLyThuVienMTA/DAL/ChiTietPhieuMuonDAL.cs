@@ -23,42 +23,6 @@ namespace DAL
             return _connect.GetData("SELECT cm.MaPM, cm.MaSach, cm.NgayMuon,cm.NgayTra,cm.HanMuon,cm.TienPhat,pm.MaNV,pm.MaSV FROM dbo.ChiTietPhieuMuon cm, dbo.PhieuMuonSach pm WHERE cm.MaPM = pm.MaPM AND pm.MaSV = '"+MaSV+"'");
         }
 
-        public int ThemPhieuMuon(ChiTietPhieuMuon pm)
-        {
-            SqlParameter[] para =
-            {
-                  new SqlParameter("MaPM",pm.MaPM),
-                  new SqlParameter("NgayMuon",pm.NgayMuon),
-                  new SqlParameter("MaNV",pm.MaNV),
-                  new SqlParameter("MaSV",pm.MaSV)
-            };
-            return _connect.ExcuteSQL("SP_ThemPhieuMuon",para);
-
-        }
-
-        public int SuaPhieuMuon(ChiTietPhieuMuon pm)
-        {
-            SqlParameter[] para =
-            {
-                  new SqlParameter("MaPM",pm.MaPM),
-                  new SqlParameter("NgayMuon",pm.NgayMuon),
-                  new SqlParameter("MaNV",pm.MaNV),
-                  new SqlParameter("MaSV",pm.MaSV)
-            };
-            return _connect.ExcuteSQL("SP_SuaPhieuMuon", para);
-
-        }
-
-        public int XoaPhieuMuon(string MaPM)
-        {
-            SqlParameter[] para =
-            {
-                  new SqlParameter("MaPM",MaPM)
-            };
-            return _connect.ExcuteSQL("SP_XoaPhieuMuon", para);
-        }
-
-
         public int ThemCTPM(ChiTietPhieuMuon pm)
         {
             SqlParameter[] para =

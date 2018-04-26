@@ -106,7 +106,6 @@ G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\BUS.pdb
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\Entity.pdb
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\bin\Debug\DAL.pdb
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.csprojResolveAssemblyReference.cache
-G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmChiTietPhieuMuon.resources
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmDangNhap.resources
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmDSSach.resources
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmNhanVien.resources
@@ -151,3 +150,5 @@ E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmSinhVien.resources
 G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmMain.resources
 H:\Users\MINH\Documents\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmhuongdan.resources
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmMuonTraSach.resources
+G:\GitHub\QuanLyThuVienMTA\QuanLyThuVienMTA\QuanLyThuVienMTA\obj\Debug\QuanLyThuVienMTA.frmhuongdan.resources

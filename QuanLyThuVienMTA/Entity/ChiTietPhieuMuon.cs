@@ -8,15 +8,14 @@ namespace Entity
 {
     public class ChiTietPhieuMuon
     {
-        private string _MaNV;
-        private string _MaSV;
+
         private string _MaPM;
         private string _MaSach;
         private string _NgayMuon;
         private string _NgayTra;
-       // private string _HanMuon;
+        private string _NgayHenTra;
         private int _TienPhat;
-        private int _SoLuong;
+
 
         public string MaPM
         {
@@ -70,19 +69,6 @@ namespace Entity
             }
         }
 
-        //public string HanMuon
-        //{
-        //    get
-        //    {
-        //        return _HanMuon;
-        //    }
-
-        //    set
-        //    {
-        //        _HanMuon = value;
-        //    }
-        //}
-
         public int TienPhat
         {
             get
@@ -96,43 +82,17 @@ namespace Entity
             }
         }
 
-        public string MaNV
+        public string NgayHenTra
         {
             get
             {
-                return _MaNV;
+                return _NgayHenTra;
             }
 
             set
             {
-                _MaNV = value;
-            }
-        }
-
-        public string MaSV
-        {
-            get
-            {
-                return _MaSV;
-            }
-
-            set
-            {
-                _MaSV = value;
-            }
-        }
-
-        public int SoLuong
-        {
-            get
-            {
-                return _SoLuong;
-            }
-
-            set
-            {
-                _SoLuong = value;
+                _NgayHenTra = value;
             }
         }
     }
- }
+}

@@ -39,7 +39,7 @@ namespace QuanLyThuVienMTA
 
         private void quảnLýMượnSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmChiTietPhieuMuon ms = new frmChiTietPhieuMuon();
+            frmMuonTraSach ms = new frmMuonTraSach();
             ms.Show();
             this.Close();
         }
@@ -95,7 +95,7 @@ namespace QuanLyThuVienMTA
         private void toolStripQLMS_Click(object sender, EventArgs e)
         {
 
-            frmChiTietPhieuMuon ms = new frmChiTietPhieuMuon();
+            frmMuonTraSach ms = new frmMuonTraSach();
             ms.Show();
             this.Close();
         }
