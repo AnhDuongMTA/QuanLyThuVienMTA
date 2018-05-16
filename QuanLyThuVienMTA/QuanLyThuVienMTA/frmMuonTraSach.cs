@@ -84,7 +84,7 @@ namespace QuanLyThuVienMTA
         {
             DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn hủy thao tác đang làm?", "Xác nhận hủy", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
-            {
+            {             
                 ClearTxt();
                 HienThiSach();
                 KhoaDieuKhien(false);
@@ -127,78 +127,78 @@ namespace QuanLyThuVienMTA
             dgvListBookSelected.Rows[e.RowIndex].Cells["STT_Muon"].Value = e.RowIndex + 1;
         }
         
-        private void dgvListBook_SelectionChanged(object sender, EventArgs e)
-        {
-            DataTable dt = new DataTable();
-            dt.Columns.Add("MaSach");
-            dt.Columns.Add("TenSach");
-            dt.Columns.Add("TacGia");
-            dt.Columns.Add("TheLoai");
-            dt.Columns.Add("NXB");
-            dt.Columns.Add("NgonNgu");
-            dt.Columns.Add("LinhVuc");
-            dt.Columns.Add("NamXB");
-            dt.Columns.Add("MaVT");
+        //private void dgvListBook_SelectionChanged(object sender, EventArgs e)
+        //{
+        //    DataTable dt = new DataTable();
+        //    dt.Columns.Add("MaSach");
+        //    dt.Columns.Add("TenSach");
+        //    dt.Columns.Add("TacGia");
+        //    dt.Columns.Add("TheLoai");
+        //    dt.Columns.Add("NXB");
+        //    dt.Columns.Add("NgonNgu");
+        //    dt.Columns.Add("LinhVuc");
+        //    dt.Columns.Add("NamXB");
+        //    dt.Columns.Add("MaVT");
 
-            for (int i = 0; i <= dgvListBook.Rows.Count - 1; i++)
-            {
+        //    for (int i = 0; i <= dgvListBook.Rows.Count - 1; i++)
+        //    {
 
 
-                bool dong_DaCo = false;
-                DataGridViewRow row = dgvListBook.Rows[i];
+        //        bool dong_DaCo = false;
+        //        DataGridViewRow row = dgvListBook.Rows[i];
 
-                if ((bool)row.Cells[1].FormattedValue)
-                {
-                    DataRow r = dt.NewRow();
+        //        if ((bool)row.Cells[1].FormattedValue)
+        //        {
+        //            DataRow r = dt.NewRow();
 
-                    if (dgvListBookSelected.Rows.Count != 0)
-                    {
-                        for (int j = 0; j < dgvListBookSelected.Rows.Count; j++)
-                        {
+        //            if (dgvListBookSelected.Rows.Count != 0)
+        //            {
+        //                for (int j = 0; j < dgvListBookSelected.Rows.Count; j++)
+        //                {
 
-                            if (dgvListBookSelected.Rows[j].Cells["MaSach_Muon"].Value == row.Cells[2].Value)
-                            {
-                                //MessageBox.Show("Da co");
-                                dong_DaCo = true;
-                                break;
-                            }
-                        }
-                    }
+        //                    if (dgvListBookSelected.Rows[j].Cells["MaSach_Muon"].Value == row.Cells[2].Value)
+        //                    {
+        //                        //MessageBox.Show("Da co");
+        //                        dong_DaCo = true;
+        //                        break;
+        //                    }
+        //                }
+        //            }
 
-                    if (dong_DaCo == false)
-                    {
+        //            if (dong_DaCo == false)
+        //            {
 
-                        r["MaSach"] = row.Cells["MaSach"].Value.ToString();
-                        r["TenSach"] = row.Cells["TenSach"].Value.ToString();
-                        r["TacGia"] = row.Cells["TacGia"].Value.ToString();
-                        r["TheLoai"] = row.Cells["TheLoai"].Value.ToString();
-                        r["NXB"] = row.Cells["NXB"].Value.ToString();
-                        r["NgonNgu"] = row.Cells["NgonNgu"].Value.ToString();
-                        r["LinhVuc"] = row.Cells["LinhVuc"].Value.ToString();
-                        r["NamXB"] = row.Cells["NamXB"].Value.ToString();
-                        r["MaVT"] = row.Cells["MaVT"].Value.ToString();
-                        dt.Rows.Add(r);
-                    }
+        //                r["MaSach"] = row.Cells["MaSach"].Value.ToString();
+        //                r["TenSach"] = row.Cells["TenSach"].Value.ToString();
+        //                r["TacGia"] = row.Cells["TacGia"].Value.ToString();
+        //                r["TheLoai"] = row.Cells["TheLoai"].Value.ToString();
+        //                r["NXB"] = row.Cells["NXB"].Value.ToString();
+        //                r["NgonNgu"] = row.Cells["NgonNgu"].Value.ToString();
+        //                r["LinhVuc"] = row.Cells["LinhVuc"].Value.ToString();
+        //                r["NamXB"] = row.Cells["NamXB"].Value.ToString();
+        //                r["MaVT"] = row.Cells["MaVT"].Value.ToString();
+        //                dt.Rows.Add(r);
+        //            }
 
-                    else
-                    {
+        //            else
+        //            {
 
-                        r["MaSach"] = row.Cells["MaSach"].Value.ToString();
-                        r["TenSach"] = row.Cells["TenSach"].Value.ToString();
-                        r["TacGia"] = row.Cells["TacGia"].Value.ToString();
-                        r["TheLoai"] = row.Cells["TheLoai"].Value.ToString();
-                        r["NXB"] = row.Cells["NXB"].Value.ToString();
-                        r["NgonNgu"] = row.Cells["NgonNgu"].Value.ToString();
-                        r["LinhVuc"] = row.Cells["LinhVuc"].Value.ToString();
-                        r["NamXB"] = row.Cells["NamXB"].Value.ToString();
-                        r["MaVT"] = row.Cells["MaVT"].Value.ToString();
-                        dt.Rows.Add(r);
-                    }
+        //                r["MaSach"] = row.Cells["MaSach"].Value.ToString();
+        //                r["TenSach"] = row.Cells["TenSach"].Value.ToString();
+        //                r["TacGia"] = row.Cells["TacGia"].Value.ToString();
+        //                r["TheLoai"] = row.Cells["TheLoai"].Value.ToString();
+        //                r["NXB"] = row.Cells["NXB"].Value.ToString();
+        //                r["NgonNgu"] = row.Cells["NgonNgu"].Value.ToString();
+        //                r["LinhVuc"] = row.Cells["LinhVuc"].Value.ToString();
+        //                r["NamXB"] = row.Cells["NamXB"].Value.ToString();
+        //                r["MaVT"] = row.Cells["MaVT"].Value.ToString();
+        //                dt.Rows.Add(r);
+        //            }
 
-                }
-                dgvListBookSelected.DataSource = dt;
-            }
-        }
+        //        }
+        //        dgvListBookSelected.DataSource = dt;
+        //    }
+        //}
 
         private void btnGhiNhan_Click(object sender, EventArgs e)
         {
@@ -215,7 +215,7 @@ namespace QuanLyThuVienMTA
                 ctpm.MaSach = dgvListBookSelected.Rows[i].Cells[1].Value.ToString();
                 ctpm.NgayMuon = dtpNgayMuon_Muon.Text;
                 ctpm.NgayHenTra = dtpNgayHenTra_Muon.Text;
-                ctpm.NgayTra = "";
+                ctpm.NgayTra = dtpNgayHenTra_Muon.Text;
                 ctpm.TienPhat = 0;
 
                 ctpmBUS.ThemCTPM(ctpm);
@@ -306,6 +306,83 @@ namespace QuanLyThuVienMTA
         private void dgvDanhSachPhieuMuon_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
             dgvDanhSachPhieuMuon.Rows[e.RowIndex].Cells["STTT"].Value = e.RowIndex + 1;
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLayDS_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("MaSach");
+            dt.Columns.Add("TenSach");
+            dt.Columns.Add("TacGia");
+            dt.Columns.Add("TheLoai");
+            dt.Columns.Add("NXB");
+            dt.Columns.Add("NgonNgu");
+            dt.Columns.Add("LinhVuc");
+            dt.Columns.Add("NamXB");
+            dt.Columns.Add("MaVT");
+
+            for (int i = 0; i <= dgvListBook.Rows.Count - 1; i++)
+            {
+                bool dong_DaCo = false;
+                DataGridViewRow row = dgvListBook.Rows[i];
+
+                if ((bool)row.Cells[1].FormattedValue)
+                {
+                    DataRow r = dt.NewRow();
+
+                    if (dgvListBookSelected.Rows.Count != 0)
+                    {
+                        for (int j = 0; j < dgvListBookSelected.Rows.Count; j++)
+                        {
+
+                            if (dgvListBookSelected.Rows[j].Cells["MaSach_Muon"].Value == row.Cells[2].Value)
+                            {
+                               
+                                dong_DaCo = true;
+                                break;
+                            }
+                        }
+                    }
+
+                    if (dong_DaCo == false)
+                    {
+
+                        r["MaSach"] = row.Cells["MaSach"].Value.ToString();
+                        r["TenSach"] = row.Cells["TenSach"].Value.ToString();
+                        r["TacGia"] = row.Cells["TacGia"].Value.ToString();
+                        r["TheLoai"] = row.Cells["TheLoai"].Value.ToString();
+                        r["NXB"] = row.Cells["NXB"].Value.ToString();
+                        r["NgonNgu"] = row.Cells["NgonNgu"].Value.ToString();
+                        r["LinhVuc"] = row.Cells["LinhVuc"].Value.ToString();
+                        r["NamXB"] = row.Cells["NamXB"].Value.ToString();
+                        r["MaVT"] = row.Cells["MaVT"].Value.ToString();
+                        dt.Rows.Add(r);
+                    }
+
+                    else
+                    {
+
+                        r["MaSach"] = row.Cells["MaSach"].Value.ToString();
+                        r["TenSach"] = row.Cells["TenSach"].Value.ToString();
+                        r["TacGia"] = row.Cells["TacGia"].Value.ToString();
+                        r["TheLoai"] = row.Cells["TheLoai"].Value.ToString();
+                        r["NXB"] = row.Cells["NXB"].Value.ToString();
+                        r["NgonNgu"] = row.Cells["NgonNgu"].Value.ToString();
+                        r["LinhVuc"] = row.Cells["LinhVuc"].Value.ToString();
+                        r["NamXB"] = row.Cells["NamXB"].Value.ToString();
+                        r["MaVT"] = row.Cells["MaVT"].Value.ToString();
+                        dt.Rows.Add(r);
+                    }
+
+                }
+
+            }
+            dgvListBookSelected.DataSource = dt;
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMuonTraSach));
             this.tabControlMuonTraSach = new System.Windows.Forms.TabControl();
             this.tabPageMuon = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -99,6 +100,8 @@
             this.NgayHenTra_Tra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HanMuon_Tra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TienPhat_Tra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLayDS = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabControlMuonTraSach.SuspendLayout();
             this.tabPageMuon.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -120,11 +123,14 @@
             this.tabControlMuonTraSach.Margin = new System.Windows.Forms.Padding(4);
             this.tabControlMuonTraSach.Name = "tabControlMuonTraSach";
             this.tabControlMuonTraSach.SelectedIndex = 0;
-            this.tabControlMuonTraSach.Size = new System.Drawing.Size(1299, 746);
+            this.tabControlMuonTraSach.Size = new System.Drawing.Size(1299, 808);
             this.tabControlMuonTraSach.TabIndex = 0;
             // 
             // tabPageMuon
             // 
+            this.tabPageMuon.BackColor = System.Drawing.Color.SeaGreen;
+            this.tabPageMuon.Controls.Add(this.label7);
+            this.tabPageMuon.Controls.Add(this.btnLayDS);
             this.tabPageMuon.Controls.Add(this.groupBox3);
             this.tabPageMuon.Controls.Add(this.groupBox2);
             this.tabPageMuon.Controls.Add(this.groupBox1);
@@ -132,22 +138,22 @@
             this.tabPageMuon.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageMuon.Name = "tabPageMuon";
             this.tabPageMuon.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPageMuon.Size = new System.Drawing.Size(1291, 713);
+            this.tabPageMuon.Size = new System.Drawing.Size(1291, 775);
             this.tabPageMuon.TabIndex = 0;
             this.tabPageMuon.Text = "Mượn Sách";
-            this.tabPageMuon.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.SeaGreen;
             this.groupBox3.Controls.Add(this.dgvListBookSelected);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox3.Location = new System.Drawing.Point(4, 487);
+            this.groupBox3.Location = new System.Drawing.Point(4, 534);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1283, 222);
+            this.groupBox3.Size = new System.Drawing.Size(1283, 237);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Sách Đã Chọn";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // dgvListBookSelected
             // 
@@ -168,7 +174,7 @@
             this.dgvListBookSelected.Location = new System.Drawing.Point(3, 24);
             this.dgvListBookSelected.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvListBookSelected.Name = "dgvListBookSelected";
-            this.dgvListBookSelected.Size = new System.Drawing.Size(1277, 195);
+            this.dgvListBookSelected.Size = new System.Drawing.Size(1277, 210);
             this.dgvListBookSelected.TabIndex = 2;
             this.dgvListBookSelected.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvListBookSelected_RowPrePaint);
             // 
@@ -243,10 +249,10 @@
             // 
             this.groupBox2.BackColor = System.Drawing.Color.SeaGreen;
             this.groupBox2.Controls.Add(this.dgvListBook);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(4, 182);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox2.Location = new System.Drawing.Point(4, 183);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1283, 527);
+            this.groupBox2.Size = new System.Drawing.Size(1283, 310);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh Sách Sách";
@@ -274,10 +280,10 @@
             this.dgvListBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvListBook.Name = "dgvListBook";
             this.dgvListBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvListBook.Size = new System.Drawing.Size(1277, 500);
+            this.dgvListBook.Size = new System.Drawing.Size(1277, 283);
             this.dgvListBook.TabIndex = 1;
             this.dgvListBook.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvListBook_RowPrePaint);
-            this.dgvListBook.SelectionChanged += new System.EventHandler(this.dgvListBook_SelectionChanged);
+          //  this.dgvListBook.SelectionChanged += new System.EventHandler(this.dgvListBook_SelectionChanged);
             // 
             // STT
             // 
@@ -381,7 +387,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1283, 178);
+            this.groupBox1.Size = new System.Drawing.Size(1283, 179);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin mượn";
@@ -778,12 +784,33 @@
             this.TienPhat_Tra.HeaderText = "Tiền phạt";
             this.TienPhat_Tra.Name = "TienPhat_Tra";
             // 
+            // btnLayDS
+            // 
+            this.btnLayDS.Image = ((System.Drawing.Image)(resources.GetObject("btnLayDS.Image")));
+            this.btnLayDS.Location = new System.Drawing.Point(483, 500);
+            this.btnLayDS.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLayDS.Name = "btnLayDS";
+            this.btnLayDS.Size = new System.Drawing.Size(63, 43);
+            this.btnLayDS.TabIndex = 9;
+            this.btnLayDS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnLayDS.UseVisualStyleBackColor = true;
+            this.btnLayDS.Click += new System.EventHandler(this.btnLayDS_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(237, 510);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(225, 21);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Lấy danh sách Sách đã chọn";
+            // 
             // frmMuonTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1299, 746);
+            this.BackColor = System.Drawing.Color.SeaGreen;
+            this.ClientSize = new System.Drawing.Size(1299, 808);
             this.Controls.Add(this.tabControlMuonTraSach);
             this.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -792,6 +819,7 @@
             this.Load += new System.EventHandler(this.frmMuonTraSach_Load);
             this.tabControlMuonTraSach.ResumeLayout(false);
             this.tabPageMuon.ResumeLayout(false);
+            this.tabPageMuon.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListBookSelected)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -879,5 +907,7 @@
         private System.Windows.Forms.TextBox txtMaPM_Tra;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnLayDS;
     }
 }
