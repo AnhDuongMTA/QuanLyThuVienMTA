@@ -25,7 +25,7 @@ namespace QuanLyThuVienMTA
         {
             HienThi();
             DisEnl(false);
-            
+
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -74,7 +74,7 @@ namespace QuanLyThuVienMTA
         }
         private void clearData()
         {
-            txtMaSach.Text="";
+            txtMaSach.Text = "";
             txtTenSach.Text = "";
             txtTacGia.Text = "";
             txtTheLoai.Text = "";
@@ -92,7 +92,7 @@ namespace QuanLyThuVienMTA
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            
+
             fluu = 0;
             clearData();
             txtMaSach.Text = sachbus.TangMa();
@@ -130,16 +130,33 @@ namespace QuanLyThuVienMTA
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            sach.MaSach=txtMaSach.Text; 
-            sach.TenSach=txtTenSach.Text ;
-            sach.TacGia=txtTacGia.Text ;
-            sach.TheLoai=txtTheLoai.Text;
-            sach.NXB=txtNXB.Text ;
-            sach.NgonNgu=txtNgonNgu.Text ;
-            sach.LinhVuc=txtLinhVuc.Text;
+            if (txtMaSach.Text == "" || txtTenSach.Text == "" || txtTacGia.Text == "" || txtTheLoai.Text == "" || txtNXB.Text == "" || txtNgonNgu.Text == "" || txtLinhVuc.Text == "" || txtNamXuatBan.Text == "" || cmbMaViTri.Text == "" || txtSoLuong.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            float a;
+            if (!float.TryParse(txtSoLuong.Text, out a))
+            {
+                MessageBox.Show("Nhập số lượng không chính xác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (!float.TryParse(txtNamXuatBan.Text, out a))
+            {
+                MessageBox.Show("Nhập năm xuất bản không chính xác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            sach.MaSach = txtMaSach.Text;
+            sach.TenSach = txtTenSach.Text;
+            sach.TacGia = txtTacGia.Text;
+            sach.TheLoai = txtTheLoai.Text;
+            sach.NXB = txtNXB.Text;
+            sach.NgonNgu = txtNgonNgu.Text;
+            sach.LinhVuc = txtLinhVuc.Text;
             sach.NamXB = Convert.ToInt16(txtNamXuatBan.Text);
-            sach.MaViTri=cmbMaViTri.Text ;
-            sach.SoLuong= Convert.ToInt16(txtSoLuong.Text);
+            sach.MaViTri = cmbMaViTri.Text;
+            sach.SoLuong = Convert.ToInt16(txtSoLuong.Text);
+
             if (fluu == 0)
             {
                 sachbus.ThemSach(sach);
@@ -147,6 +164,7 @@ namespace QuanLyThuVienMTA
                 HienThi();
                 clearData();
                 DisEnl(false);
+                fluu = 1;
             }
             else
             {
@@ -160,7 +178,7 @@ namespace QuanLyThuVienMTA
 
         private void dgvChiTietSach_Click(object sender, EventArgs e)
         {
-            if (fluu==0)
+            if (fluu == 0)
             {
                 txtTenSach.Text = Convert.ToString(dgvChiTietSach.CurrentRow.Cells["TenSach"].Value);
                 txtTacGia.Text = Convert.ToString(dgvChiTietSach.CurrentRow.Cells["TacGia"].Value);
@@ -171,7 +189,8 @@ namespace QuanLyThuVienMTA
                 txtNamXuatBan.Text = Convert.ToString(dgvChiTietSach.CurrentRow.Cells["NamXB"].Value);
                 cmbMaViTri.Text = Convert.ToString(dgvChiTietSach.CurrentRow.Cells["MaVT"].Value);
                 txtSoLuong.Text = Convert.ToString(dgvChiTietSach.CurrentRow.Cells["SoLuong"].Value);
-            }else
+            }
+            else
             {
                 txtMaSach.Text = Convert.ToString(dgvChiTietSach.CurrentRow.Cells["MaSach"].Value);
                 txtTenSach.Text = Convert.ToString(dgvChiTietSach.CurrentRow.Cells["TenSach"].Value);
@@ -184,7 +203,7 @@ namespace QuanLyThuVienMTA
                 cmbMaViTri.Text = Convert.ToString(dgvChiTietSach.CurrentRow.Cells["MaVT"].Value);
                 txtSoLuong.Text = Convert.ToString(dgvChiTietSach.CurrentRow.Cells["SoLuong"].Value);
             }
-            
+
         }
 
         private void dgvChiTietSach_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
@@ -194,9 +213,9 @@ namespace QuanLyThuVienMTA
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            if (cmbTimKiem.Text=="Theo Mã Sách")
+            if (cmbTimKiem.Text == "Theo Mã Sách")
             {
-                dgvChiTietSach.DataSource = sachbus.TimKiemSach("select * from ChiTietSach where MaSach like '%"+txtTimKiem.Text+"%'");
+                dgvChiTietSach.DataSource = sachbus.TimKiemSach("select * from ChiTietSach where MaSach like '%" + txtTimKiem.Text + "%'");
             }
             if (cmbTimKiem.Text == "Theo Tên Sách")
             {
@@ -224,7 +243,7 @@ namespace QuanLyThuVienMTA
             }
             if (cmbTimKiem.Text == "Theo Năm Xuât Bản")
             {
-                dgvChiTietSach.DataSource = sachbus.TimKiemSach("select * from ChiTietSach where NamXB like '%" + Convert.ToInt16(txtTimKiem.Text)+ "%'");
+                dgvChiTietSach.DataSource = sachbus.TimKiemSach("select * from ChiTietSach where NamXB like '%" + Convert.ToInt16(txtTimKiem.Text) + "%'");
             }
             if (cmbTimKiem.Text == "Theo Mã Vị Trí")
             {

@@ -121,7 +121,7 @@ namespace QuanLyThuVienMTA
 
 
             frmSach s = new frmSach();
-            s.Show();
+            s.ShowDialog();
             this.Close();
         }
 

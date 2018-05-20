@@ -16,7 +16,7 @@ namespace QuanLyThuVienMTA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMuonTraSach());
+            Application.Run(new frmMain());
         }
     }
 }
