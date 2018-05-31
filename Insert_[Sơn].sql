@@ -1,0 +1,18 @@
+﻿USE QuanLyThuVienMTA
+GO
+INSERT INTO dbo.ViTriSach( MaVT, ViTri, TenKe )
+VALUES  ( 'VT01',N'Giáo Trình CNTT ',N'Dãy A')
+INSERT INTO dbo.ViTriSach( MaVT, ViTri, TenKe )
+VALUES  ( 'VT02',N'Giáo Trình Điện Điện Tử ',N'Dãy B')
+INSERT INTO dbo.ViTriSach( MaVT, ViTri, TenKe )
+VALUES  ( 'VT03',N'Giáo Trình Xây Dựng ',N'Dãy C')
+INSERT INTO dbo.ViTriSach( MaVT, ViTri, TenKe )
+VALUES  ( 'VT04',N'Giáo Trình Cơ Khí ',N'Dãy D')
+INSERT INTO dbo.ViTriSach( MaVT, ViTri, TenKe )
+VALUES  ( 'VT05',N'Giáo Trình Ô Tô ',N'Dãy E')
+INSERT INTO dbo.ViTriSach( MaVT, ViTri, TenKe )
+VALUES  ( 'VT06',N'Giáo Trình Công Nghệ Hóa Học ',N'Dãy F')
+INSERT INTO dbo.ViTriSach( MaVT, ViTri, TenKe )
+VALUES  ( 'VT07',N'Giáo Trình Hàng Không Vũ Trụ ',N'Dãy G')
+INSERT INTO dbo.ViTriSach( MaVT, ViTri, TenKe )
+VALUES  ( 'VT08',N'Giáo Trình Cơ Điện Tử ',N'Dãy H')
