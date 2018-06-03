@@ -1,4 +1,7 @@
-﻿INSERT INTO dbo.NhanVien
+﻿USE QuanLyThuVienMTA
+GO
+
+INSERT INTO dbo.NhanVien
         ( MaNV ,
           TenNV ,
           GioiTinh ,
@@ -249,3 +252,36 @@ INSERT dbo.ChiTietPhieuMuon ( MaPM ,MaSach ,NgayMuon ,HanMuon ,NgayTra ,TienPhat
 VALUES  ('PM04','MS07','2017-12-07','2018-7-09','2018-7-09',0)
 INSERT dbo.ChiTietPhieuMuon ( MaPM ,MaSach ,NgayMuon ,HanMuon ,NgayTra ,TienPhat)
 VALUES  ('PM04','MS08','2017-12-07','2018-7-09','2018-7-09',0)
+
+
+GO
+INSERT dbo.SinhVien
+        ( MaSV ,TenSV ,GioiTinh ,NgaySinh , SoDT ,Lop)
+VALUES  ( 'SV01','Nguyễn Hồng Sơn','Nam','1997/06/09','0123456789','KHMT')
+INSERT dbo.SinhVien
+        ( MaSV ,TenSV ,GioiTinh ,NgaySinh , SoDT ,Lop)
+VALUES  ( 'SV02','Vương Văn Thanh','Nam','1997/09/06','0123456789','KHMT')
+INSERT dbo.SinhVien
+        ( MaSV ,TenSV ,GioiTinh ,NgaySinh , SoDT ,Lop)
+VALUES  ( 'SV03','Phan Duy Dương','Nam','1997/09/06','0123456789','MMT')
+INSERT dbo.SinhVien
+        ( MaSV ,TenSV ,GioiTinh ,NgaySinh , SoDT ,Lop)
+VALUES  ( 'SV04','Nguyễn Thị Ngọc Ánh','Nữ','1997/06/09','0123456789','KTPM')
+INSERT dbo.SinhVien
+        ( MaSV ,TenSV ,GioiTinh ,NgaySinh , SoDT ,Lop)
+VALUES  ( 'SV05','Phạm Quang Minh','Nam','1997/09/06','0123456789','KHMT')
+INSERT dbo.SinhVien
+        ( MaSV ,TenSV ,GioiTinh ,NgaySinh , SoDT ,Lop)
+VALUES  ( 'SV06','Ngô Mạnh Cường','Nam','1997/06/09','0123456789','KHMT')
+INSERT dbo.SinhVien
+        ( MaSV ,TenSV ,GioiTinh ,NgaySinh , SoDT ,Lop)
+VALUES  ( 'SV07','Nguyễn Thái Sơn','Nam','1997/09/06','0123456789','KHMT')
+INSERT dbo.SinhVien
+        ( MaSV ,TenSV ,GioiTinh ,NgaySinh , SoDT ,Lop)
+VALUES  ( 'SV08','Trịnh Viết Quốc','Nam','1997/06/09','0123456789','KHMT')
+INSERT dbo.SinhVien
+        ( MaSV ,TenSV ,GioiTinh ,NgaySinh , SoDT ,Lop)
+VALUES  ( 'SV09','Nguyễn Văn Trường','Nam','1997/09/06','0123456789','KHMT')
+INSERT dbo.SinhVien
+        ( MaSV ,TenSV ,GioiTinh ,NgaySinh , SoDT ,Lop)
+VALUES  ( 'SV10','Trọng Thị Hảo','Nữ','1997/06/09','0123456789','KHMT')
