@@ -285,3 +285,126 @@ VALUES  ( 'SV09','Nguyễn Văn Trường','Nam','1997/09/06','0123456789','KHMT
 INSERT dbo.SinhVien
         ( MaSV ,TenSV ,GioiTinh ,NgaySinh , SoDT ,Lop)
 VALUES  ( 'SV10','Trọng Thị Hảo','Nữ','1997/06/09','0123456789','KHMT')
+
+
+INSERT dbo.ChiTietSach
+VALUES  ( 'MS01' , -- MaSach - varchar(50)
+          N'Lập Trình Với Scratch' , -- TenSach - nvarchar(50)
+          N' Lifelong Kindergarten Scratch' , -- TacGia - nvarchar(50)
+          N'Sách CNTT' , -- TheLoai - nvarchar(50)
+          N'Nhi Đồng' , -- NXB - nvarchar(50)
+          N'tiếng việt' , -- NgonNgu - nvarchar(50)
+          N'Khoa học công nghệ' , -- LinhVuc - nvarchar(50)
+          2000, -- NamXB - int
+          'VT01' , -- MaVT - varchar(50)
+          1000  -- SoLuong - int
+        )
+INSERT dbo.ChiTietSach
+VALUES  ( 'MS01' , -- MaSach - varchar(50)
+          N'Design Layout Volume 1' , -- TenSach - nvarchar(50)
+          N'Kindergarten' , -- TacGia - nvarchar(50)
+          N'Sách CNTT' , -- TheLoai - nvarchar(50)
+          N'Kim Đồng' , -- NXB - nvarchar(50)
+          N'Tiếng anh' , -- NgonNgu - nvarchar(50)
+          N'Khoa học công nghệ' , -- LinhVuc - nvarchar(50)
+          1999 , -- NamXB - int
+          'VT01' , -- MaVT - varchar(50)
+          50  -- SoLuong - int
+        )
+INSERT dbo.ChiTietSach
+VALUES  ( 'MS03' , -- MaSach - varchar(50)
+          N'Giáo trình Truyền động Điện Tự động' , -- TenSach - nvarchar(50)
+          N'Khương Công Minh' , -- TacGia - nvarchar(50)
+          N'Sách điện điện tử' , -- TheLoai - nvarchar(50)
+          N'Kim Đồng' , -- NXB - nvarchar(50)
+          N'Tiếng việt' , -- NgonNgu - nvarchar(50)
+          N'Khoa học kỹ thuật' , -- LinhVuc - nvarchar(50)
+          1999 , -- NamXB - int
+          'VT02' , -- MaVT - varchar(50)
+          50  -- SoLuong - int
+        )
+INSERT dbo.ChiTietSach
+VALUES  ( 'MS03' , -- MaSach - varchar(50)
+          N'Giáo trình Kỹ thuật xung -số' , -- TenSach - nvarchar(50)
+          N'LÂM TĂNG ĐỨC' , -- TacGia - nvarchar(50)
+          N'Sách điện điện tử' , -- TheLoai - nvarchar(50)
+          N'Tuổi trẻ' , -- NXB - nvarchar(50)
+          N'Tiếng việt' , -- NgonNgu - nvarchar(50)
+          N'Khoa học kỹ thuật' , -- LinhVuc - nvarchar(50)
+          1990 , -- NamXB - int
+          'VT02' , -- MaVT - varchar(50)
+          120  -- SoLuong - int
+        )
+INSERT dbo.ChiTietSach
+VALUES  ( 'MS04' , -- MaSach - varchar(50)
+          N'Bê tông cường độ cao và chất lượng cao' , -- TenSach - nvarchar(50)
+          N'GS. Phạm Duy Hữu ' , -- TacGia - nvarchar(50)
+          N'Sách xây dựng' , -- TheLoai - nvarchar(50)
+          N'Tuổi trẻ' , -- NXB - nvarchar(50)
+          N'Tiếng việt' , -- NgonNgu - nvarchar(50)
+          N'Xây dựng' , -- LinhVuc - nvarchar(50)
+          1991 , -- NamXB - int
+          'VT03' , -- MaVT - varchar(50)
+          150  -- SoLuong - int
+        )
+INSERT dbo.ChiTietSach
+VALUES  ( 'MS05' , -- MaSach - varchar(50)
+          N'Công nghệ tiện và gia công lỗ' , -- TenSach - nvarchar(50)
+          N'Trần Minh Thế Uyên' , -- TacGia - nvarchar(50)
+          N'Sách cơ khí' , -- TheLoai - nvarchar(50)
+          N'Đại học Quốc gia TP. HCM' , -- NXB - nvarchar(50)
+          N'Tiếng việt' , -- NgonNgu - nvarchar(50)
+          N'Cơ khí' , -- LinhVuc - nvarchar(50)
+          1990 , -- NamXB - int
+          'VT04' , -- MaVT - varchar(50)
+          95  -- SoLuong - int
+        )
+INSERT dbo.ChiTietSach
+VALUES  ( 'MS06' , -- MaSach - varchar(50)
+          N'English for the Automobile Industry' , -- TenSach - nvarchar(50)
+          N'Express Series,' , -- TacGia - nvarchar(50)
+          N'Sách ô tô' , -- TheLoai - nvarchar(50)
+          N'Oxford Business English.' , -- NXB - nvarchar(50)
+          N'Tiếng anh' , -- NgonNgu - nvarchar(50)
+          N'Ô tô' , -- LinhVuc - nvarchar(50)
+          1980 , -- NamXB - int
+          'VT05' , -- MaVT - varchar(50)
+          90  -- SoLuong - int
+        )
+
+INSERT dbo.ChiTietSach
+VALUES  ( 'MS07' , -- MaSach - varchar(50)
+          N'Cơ bản về hàng không vũ trụ' , -- TenSach - nvarchar(50)
+          N'Rouker,' , -- TacGia - nvarchar(50)
+          N'Sách hàng không' , -- TheLoai - nvarchar(50)
+          N'Tuổi trẻ.' , -- NXB - nvarchar(50)
+          N'Tiếng việt' , -- NgonNgu - nvarchar(50)
+          N'hàng không vũ trụ' , -- LinhVuc - nvarchar(50)
+          2002 , -- NamXB - int
+          'VT07' , -- MaVT - varchar(50)
+          100  -- SoLuong - int
+        )
+INSERT dbo.ChiTietSach
+VALUES  ( 'MS08' , -- MaSach - varchar(50)
+          N'Giới thiệu sách "Chuyên ngành Cơ Điện Tử' , -- TenSach - nvarchar(50)
+          N'Omen,' , -- TacGia - nvarchar(50)
+          N'Sách cơ điện tử' , -- TheLoai - nvarchar(50)
+          N'Tuổi trẻ.' , -- NXB - nvarchar(50)
+          N'Tiếng việt' , -- NgonNgu - nvarchar(50)
+          N'Cơ điện tử' , -- LinhVuc - nvarchar(50)
+          2000 , -- NamXB - int
+          'VT08' , -- MaVT - varchar(50)
+          100  -- SoLuong - int
+        )
+INSERT dbo.ChiTietSach
+VALUES  ( 'MS09' , -- MaSach - varchar(50)
+          N'HÓA HỌC VÔ CƠ ' , -- TenSach - nvarchar(50)
+          N'HOÀNG NHÂM,' , -- TacGia - nvarchar(50)
+          N'Sách hóa học' , -- TheLoai - nvarchar(50)
+          N'Kim đồng.' , -- NXB - nvarchar(50)
+          N'Tiếng việt' , -- NgonNgu - nvarchar(50)
+          N'Hóa học' , -- LinhVuc - nvarchar(50)
+          1995 , -- NamXB - int
+          'VT06' , -- MaVT - varchar(50)
+          100  -- SoLuong - int
+        )
